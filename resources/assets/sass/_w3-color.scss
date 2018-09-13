@@ -1,0 +1,77 @@
+$w3-amber: #ffc107;
+$w3-aqua: #00ffff;
+$w3-blue: #2196F3;
+$w3-light-blue: #87CEEB;
+$w3-brown: #795548;
+$w3-cyan: #00bcd4;
+$w3-blue-gray: #607d8b;
+$w3-green: #4CAF50;
+$w3-light-green: #8bc34a;
+$w3-indigo: #3f51b5;
+$w3-khaki: #b4aa50;
+$w3-lime: #cddc39;
+$w3-orange: #ff9800;
+$w3-deep-orange: #ff5722;
+$w3-pink: #a73058;
+$w3-purple: #9c27b0;
+$w3-deep-purple: #673ab7;
+$w3-red: #f44336;
+$w3-sand: #fdf5e6;
+$w3-teal: #009688;
+$w3-yellow: #d2be0e;
+$w3-white: #fff;
+$w3-black: #000;
+$w3-gray: #757575;
+$w3-light-gray: #f1f1f1;
+$w3-dark-gray: #3a3a3a;
+$w3-pale-red: #ffe7e7;
+$w3-pale-green: #e7ffe7;
+$w3-pale-yellow: #ffffcc;
+$w3-pale-blue: #e7ffff;
+
+@mixin color ($name, $color) {
+  .w3-#{$name},.w3-hover-#{$name}:hover{
+    @if lightness($color) > 50{
+      color: black;
+    }
+    @else {
+      color: white;
+    }
+    background-color:$color;
+  }
+  .w3-text-#{$name},.w3-hover-text-#{$name}:hover{color:$color !important;}
+  .w3-fill-#{$name},.w3-hover-fill-#{$name}:hover{fill:$color;}
+  .w3-border-#{$name},.w3-hover-border-#{$name}:hover{border-color:$color;}
+  .w3-underline-#{$name}{text-decoration: underline; text-decoration-color: $color;}
+}
+
+@include color('amber', $w3-amber);
+@include color('aqua', $w3-aqua);
+@include color('blue', $w3-blue);
+@include color('light-blue', $w3-light-blue);
+@include color('brown', $w3-brown);
+@include color('cyan', $w3-cyan);
+@include color('blue-gray', $w3-blue-gray);
+@include color('green', $w3-green);
+@include color('light-green', $w3-light-green);
+@include color('indigo', $w3-indigo);
+@include color('khaki', $w3-khaki);
+@include color('lime', $w3-lime);
+@include color('orange', $w3-orange);
+@include color('deep-orange', $w3-deep-orange);
+@include color('pink', $w3-pink);
+@include color('purple', $w3-purple);
+@include color('deep-purple', $w3-deep-purple);
+@include color('red', $w3-red);
+@include color('sand', $w3-sand);
+@include color('teal', $w3-teal);
+@include color('yellow', $w3-yellow);
+@include color('white', $w3-white);
+@include color('black', $w3-black);
+@include color('gray', $w3-gray);
+@include color('light-gray', $w3-light-gray);
+@include color('dark-gray', $w3-dark-gray);
+@include color('pale-red', $w3-pale-red);
+@include color('pale-green', $w3-pale-green);
+@include color('pale-yellow', $w3-pale-yellow);
+@include color('pale-blue', $w3-pale-blue);

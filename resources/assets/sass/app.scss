@@ -1,0 +1,78 @@
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+@import "~bootstrap/scss/functions";
+@import "w3-color";
+@import "variables";
+
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+//@import "~bootstrap/scss/images";
+//@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+//@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+//@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+//@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+//@import "~bootstrap/scss/progress";
+//@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+//@import "~bootstrap/scss/modal";
+//@import "~bootstrap/scss/tooltip";
+//@import "~bootstrap/scss/popover";
+//@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+@import "header";
+
+.navbar{
+  font-size: 1.75em;
+  font-family: 'Niconne', cursive;
+
+  .navbar-brand
+  {
+    font-size: 1em;
+  }
+}
+
+.nav-item:hover{
+  background-color: $w3-light-gray;
+}
+
+.page{
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.box-shadow{
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+
+.container{
+  padding: 20px 15px;
+}
+
+.vertical-margin-32{
+  margin: 32px 0px;
+}
+
+footer {
+  font-size: 2em;
+  text-align: center;
+}
