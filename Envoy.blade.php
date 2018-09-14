@@ -31,8 +31,11 @@
 @endmacro
 
 @macro('deploy-update')
-    deploy
+    createrelease
     composer
+    createLink
+    compileCSS
+    linkCurrent
 @endmacro
 
 @task('createrelease')
@@ -40,6 +43,7 @@
     mkdir -p {{$release}};
     cd {{$repo}};
     git archive master | tar -x -C {{$release}};
+    cd {{$release}};
     chmod 777 storage -R;
 @endtask
 
@@ -49,7 +53,7 @@
     ln -s {{$shared}}/_environement.scss {{$release}}/resources/assets/sass/_environement.scss;
     cd {{$release}};
     composer dump-autoload -o;
-@endTask
+@endtask
 
 @task('compileCSS')
     echo "Compilation du css';
