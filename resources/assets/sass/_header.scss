@@ -1,5 +1,5 @@
 header{
-  background-image: url("/siteApache/pamv/public/img/fond.jpg");
+  background-image: url($appPath + "/public/img/fond.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
