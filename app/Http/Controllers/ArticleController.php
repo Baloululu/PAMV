@@ -3,18 +3,31 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Category;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+
+    public function bracelets()
     {
-        //
+        return $this->page('Bracelets');
+    }
+
+    public function colliers()
+    {
+        return $this->page('Colliers');
+    }
+
+    public function pierres()
+    {
+        return $this->page('Pierres');
+    }
+
+    private function page($page)
+    {
+        $articles = Category::where('name', $page)->first()->articles;
+        return view('pages/articles', compact('page', 'articles'));
     }
 
     /**

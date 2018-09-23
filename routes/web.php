@@ -13,6 +13,16 @@
 
 Route::get('/', function () {
     return view('pages/accueil');
-});
+})
+    ->name('accueil');
 
-Route::resource('article/{category}', 'ArticleController');
+Route::get('bracelets', 'ArticleController@bracelets')
+    ->name('bracelets');
+
+Route::get('colliers', 'ArticleController@colliers')
+    ->name('colliers');
+
+Route::get('pierres', 'ArticleController@pierres')
+    ->name('pierres');
+
+Route::resource('article', 'ArticleController', ['except' => 'index']);

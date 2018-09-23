@@ -14,7 +14,7 @@
 <body>
 
 <nav class="navbar navbar-expand-md fixed-top w3-gray navbar-dark box-shadow">
-    <a href="#" class="navbar-brand">Logo</a>
+    <a href="{{route('accueil')}}" class="navbar-brand">Logo</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,19 +22,19 @@
 
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="navbar-nav">
-            <li class="nav-item @yield('accueil')">
-                <a href="#" class="nav-link">Accueil</a>
+            <li class="nav-item @yield('Accueil')">
+                <a href="{{route('accueil')}}" class="nav-link">Accueil</a>
             </li>
-            <li class="nav-item @yield('bracelets')">
-                <a href="#" class="nav-link">Bracelets</a>
+            <li class="nav-item @yield('Bracelets')">
+                <a href="{{route('bracelets')}}" class="nav-link">Bracelets</a>
             </li>
-            <li class="nav-item @yield('colliers')">
-                <a href="#" class="nav-link">Colliers</a>
+            <li class="nav-item @yield('Colliers')">
+                <a href="{{route('colliers')}}" class="nav-link">Colliers</a>
             </li>
-            <li class="nav-item @yield('pierres')">
-                <a href="#" class="nav-link">Pierres</a>
+            <li class="nav-item @yield('Pierres')">
+                <a href="{{route('pierres')}}" class="nav-link">Pierres</a>
             </li>
-            <li class="nav-item @yield('livre')">
+            <li class="nav-item @yield('Livre')">
                 <a href="#" class="nav-link">Livre d'or</a>
             </li>
         </ul>

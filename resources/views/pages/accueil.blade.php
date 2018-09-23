@@ -1,6 +1,6 @@
 @extends("default")
 @section('title', 'Accueil')
-@section('accueil', 'active')
+@section('Accueil', 'active')
 
 @section('content')
     <div class="container">
@@ -11,10 +11,11 @@
 
                 <p class="w3-text-gray">Je suis allée voir une magnétiseuse qui ma conseillée de porter un bracelet en perles labradorite... ce que j’ai fait... et au bout de quelques heures j’ai ressenti les bienfaits.
                     C‘était magique... donc à partir de là j’ai décidé d’en faire profiter mon entourage en fabriquant moi-même les bracelets et je n'ai eu que de bons résptats auprès de tout le monde.
-                    Donc je me suis dit je vais en faire ma micro entreprise et en faire profiter d'autres personnes. J’ ai fait une formation aux cristaux éthériques auprès de Nadège pour mieux vous satisfaire et bien
+                    Donc je me suis dit je vais en faire ma micro entreprise et en faire profiter d'autres personnes. J’ai fait une formation aux cristaux éthériques auprès de Nadège pour mieux vous satisfaire et bien
                     connaitre les bienfaits des pierres.</p>
                 <p class="w3-text-gray">Je vous propose de faire des bracelets, colliers, ... pour soulager vos maux. Mais aussi de porter des pierres sur vous ou le mettre dans des pièces pour harmoniser votre maison...
-                    Les prix varient en fonction de votre tour de poignet. N’ hésitez pas à me contacter soit par mail : pamv88@orange.fr ou par message via ma page facebook.</p>
+                    Les prix varient en fonction de votre tour de poignet. N’ hésitez pas à me contacter soit par mail :
+                    <a href="mailto:pamv88@orange.fr">pamv88@orange.fr</a> ou par message via ma page <a href="https://www.facebook.com/fadylaurence/" target="_blank">facebook</a>.</p>
                 <p class="w3-text-gray">Au plaisir de vous rencontrer !</p>
                 <p class="w3-text-gray">Laurence.</p>
 
