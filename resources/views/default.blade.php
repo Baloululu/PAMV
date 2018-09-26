@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <title>PAMV : @yield('title')</title>
@@ -45,7 +49,7 @@
 <header>
     <div class="fondAlpha">
         <h1 class="w3-text-pink" style="font-size: 5rem; margin-bottom: 32px;">Pierres aux milles vertus</h1>
-        <h4 class="w3-text-blue">Bracelets anti-stress, sommeil, ménopause...</h4>
+        <h4 class="w3-text-light-blue">Bracelets anti-stress, sommeil, ménopause...</h4>
     </div>
 </header>
 

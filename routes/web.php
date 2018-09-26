@@ -26,3 +26,6 @@ Route::get('pierres', 'ArticleController@pierres')
     ->name('pierres');
 
 Route::resource('article', 'ArticleController', ['except' => 'index']);
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
