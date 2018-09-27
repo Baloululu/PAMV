@@ -8,7 +8,7 @@
                 <div class="card-header">Connexion</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ url('/') }}" aria-label="Connexion">
+                    <form method="POST" action="{{ route('login') }}" aria-label="Connexion">
                         @csrf
 
                         <div class="form-group row">
