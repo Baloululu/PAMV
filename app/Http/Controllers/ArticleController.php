@@ -142,7 +142,7 @@ class ArticleController extends Controller
 
         Image::make($file)
 //            ->oriented()
-            ->resize(300, null, function ($constraint){
+            ->resize(500, null, function ($constraint){
                 $constraint->aspectRatio();
             })
             ->interlace(true)

@@ -13,6 +13,8 @@
 @task('prepare')
     mkdir -p {{$repo}};
     mkdir -p {{$shared}};
+    mkdir -p {{$shared}}/articlesImg;
+    chmod 777 {{$shared}}/articlesImg;
     cd {{$repo}};
     git init --bare;
 @endtask
@@ -52,11 +54,12 @@
     ln -s {{$shared}}/vendor {{$release}}/vendor;
     ln -s {{$shared}}/.env {{$release}}/.env;
     ln -s {{$shared}}/_environement.scss {{$release}}/resources/assets/sass/_environement.scss;
+    ln -s {{$shared}}/articlesImg {{$release}}/public/img/articlesImg
 @endtask
 
 @task('migration')
     cd {{$release}};
-    php artisan migration migrate
+    php artisan migrate
 @endtask
 
 @task('linkCurrent')
@@ -65,5 +68,5 @@
     rm -f {{$current}};
     ln -s {{$release}}/public {{$current}};
     ls {{$dir}}/releases | sort -r | tail -n +{{$nbreleases + 1}} | xargs -I{} -r rm -rf {{$dir}}/releases/{};
-    echo "Lien : {{$current}} --> {{$release}}";
+    echo "Lien : {{$current}} --> {{$release}}/public";
 @endtask

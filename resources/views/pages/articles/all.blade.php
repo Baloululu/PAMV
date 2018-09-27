@@ -23,7 +23,7 @@
                                 {{ $article->title }}
                             </h5>
                             <p class="card-text">
-                                {!! str_limit($article->content, $limit = 150, $end = '...') !!}
+                                {!! str_limit($article->content, rand ( 150, 250 ), '...') !!}
                             </p>
                             <a href="{{ route('article.show', $article) }}" class="card-text">Lire la suite</a>
                         </div>

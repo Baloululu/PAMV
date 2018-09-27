@@ -19,7 +19,7 @@ else
 
 <div class="form-group">
     {!! Form::label('title', 'Titre') !!}
-    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+    {!! Form::text('title', null, ['class' => 'form-control '.($errors->has('title') ? ' is-invalid' : '')]) !!}
 </div>
 
 <div class="form-group">
