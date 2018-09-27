@@ -18,7 +18,6 @@
 @endtask
 
 @task('composer')
-    mkdir -p {{$shared}}/vendor;
     cd {{$release}};
     composer update --no-dev --no-progress;
 @endtask
@@ -26,15 +25,15 @@
 @macro('deploy')
     createrelease
     createLink
-    compileCSS
+    migration
     linkCurrent
 @endmacro
 
 @macro('deploy-update')
     createrelease
-    composer
     createLink
-    compileCSS
+    composer
+    migration
     linkCurrent
 @endmacro
 
@@ -45,25 +44,26 @@
     git archive master | tar -x -C {{$release}};
     cd {{$release}};
     chmod 777 storage -R;
+    chmod 777 public -R;
 @endtask
 
 @task('createLink')
+    mkdir -p {{$shared}}/vendor;
     ln -s {{$shared}}/vendor {{$release}}/vendor;
     ln -s {{$shared}}/.env {{$release}}/.env;
     ln -s {{$shared}}/_environement.scss {{$release}}/resources/assets/sass/_environement.scss;
-    cd {{$release}};
-    composer dump-autoload -o;
 @endtask
 
-@task('compileCSS')
-    echo "Compilation du css';
+@task('migration')
     cd {{$release}};
-    npm run prod;
+    php artisan migration migrate
 @endtask
 
 @task('linkCurrent')
+    cd {{$release}};
+    composer dump-autoload -o;
     rm -f {{$current}};
-    ln -s {{$release}} {{$current}};
+    ln -s {{$release}}/public {{$current}};
     ls {{$dir}}/releases | sort -r | tail -n +{{$nbreleases + 1}} | xargs -I{} -r rm -rf {{$dir}}/releases/{};
     echo "Lien : {{$current}} --> {{$release}}";
 @endtask

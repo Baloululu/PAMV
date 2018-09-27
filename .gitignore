@@ -13,3 +13,4 @@ yarn-error.log
 .env
 /resources/assets/sass/_environement.scss
 *.lock
+/public/img/articlesImg

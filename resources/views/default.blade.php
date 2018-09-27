@@ -9,7 +9,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -59,11 +59,10 @@
 
 <footer>
     <div class="container">
-        <a href="mailto:pamv88@orange.fr"><i class="fa fa-envelope w3-text-gray"></i></a>
-        <a href="https://www.facebook.com/fadylaurence/" target="_blank"><i class="fa fa-facebook-official w3-text-gray"></i></a>
+        <a href="mailto:pamv88@orange.fr"><i class="fas fa-envelope w3-text-gray w3-hover-text-blue"></i></a>
+        <a href="https://www.facebook.com/fadylaurence/" target="_blank"><i class="fab fa-facebook-square w3-text-gray w3-hover-text-blue"></i></a>
     </div>
 </footer>
-
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
