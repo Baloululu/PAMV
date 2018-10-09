@@ -13,21 +13,27 @@
             </div>
             @else
                 @include('pages/comments/form')
+                @endguest
+
                 @forelse($comments as $comment)
                     <div class="card mt-3">
                         <div class="card-header">
                             {{ $comment->user->name }}
                         </div>
                         <div class="card-body">
-                            <p class="card-text">{{ $comment->content }}</p>
+
+                            @if (Auth::check() && Auth::user()->id == $comment->user_id)
+                                @include('pages/comments/form')
+                            @else
+                                <p class="card-text">{{ $comment->content }}</p>
+                            @endif
                         </div>
                         <div class="card-footer text-right">
                             {{ $comment->created_at->diffForHumans() }}
                         </div>
                     </div>
-                    @empty
+                @empty
                     <p>Il n'y a aucun commentaire pour le moement.</p>
                 @endforelse
-        @endguest
     </div>
 @endsection

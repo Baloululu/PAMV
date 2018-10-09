@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Comment;
+use App\Http\Requests\EditCommentRequest;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -19,7 +20,7 @@ class CommentController extends Controller
         Carbon::setLocale(config('app.locale'));
         $newComment = new Comment();
         if (Auth::check() && Auth::user()->isAdmin())
-            $comments = Comment::with('user')->get();
+            $comments = Comment::with('user')->orderBy('updated_at', 'DESC')->get();
         else
             $comments = Comment::with('user')->published()->get();
         return view('pages/comments/livre', compact('newComment', 'comments'));
@@ -31,9 +32,9 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(EditCommentRequest $request)
     {
-        $comment = Comment::create(
+        Comment::create(
             [
                 'content' => $request->get('content'),
                 'user_id' => Auth::user()->id
@@ -49,9 +50,10 @@ class CommentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comment $comment)
+    public function update(EditCommentRequest $request, $id)
     {
-        $comment->update($request);
+        $comment = Comment::findOrFail($id);
+        $comment->update($request->all());
         return redirect(route('livre.index'));
     }
 
@@ -61,8 +63,9 @@ class CommentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comment $comment)
+    public function destroy($id)
     {
+        $comment = Comment::findOrFail($id);
         $comment->delete();
         return redirect(route('livre.index'))-with(['succes' => "Votre commentaire a bien été supprimé."]);
     }

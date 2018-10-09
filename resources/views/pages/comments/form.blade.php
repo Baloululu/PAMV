@@ -12,7 +12,6 @@ else
 {!! Form::model($comment, $option) !!}
 
 <div class="form-group">
-    {!! Form::label('content', 'Contenu') !!}
     {!! Form::textArea('content', null, ['class' => 'form-control']) !!}
 </div>
 
