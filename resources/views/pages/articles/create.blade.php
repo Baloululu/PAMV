@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="container">
-        @include('pages/articles/flash')
+        @include('pages.flash')
         <h1>Ajouter un nouvel article</h1>
 
         @include('pages/articles/form')

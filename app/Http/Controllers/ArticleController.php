@@ -13,7 +13,7 @@ class ArticleController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth')->except(['bracelets', 'colliers', 'pierres', 'show']);
+        $this->middleware('admin')->except(['bracelets', 'colliers', 'pierres', 'show']);
     }
 
     public function bracelets()
@@ -106,6 +106,7 @@ class ArticleController extends Controller
     {
         if ($request->hasFile('image'))
         {
+            unlink($article->image);
             $path = $this->uploadImage($request->file('image'));
             $article->update([
                 'title' => $request->get('title'),

@@ -13,7 +13,10 @@ class EditArticleRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        if (Auth::check() && Auth::user()->isAdmin())
+            return true;
+        else
+            return false;
     }
 
     /**

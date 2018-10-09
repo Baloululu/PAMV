@@ -27,5 +27,7 @@ Route::get('pierres', 'ArticleController@pierres')
 
 Route::resource('article', 'ArticleController', ['except' => 'index']);
 
+Route::resource('livre', 'CommentController', ['except' => ['show', 'create', 'edit']]);
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

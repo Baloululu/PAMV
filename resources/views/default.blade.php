@@ -39,7 +39,7 @@
                 <a href="{{route('pierres')}}" class="nav-link">Pierres</a>
             </li>
             <li class="nav-item @yield('Livre')">
-                <a href="#" class="nav-link">Livre d'or</a>
+                <a href="{{ route('livre.index') }}" class="nav-link">Livre d'or</a>
             </li>
         </ul>
     </div>

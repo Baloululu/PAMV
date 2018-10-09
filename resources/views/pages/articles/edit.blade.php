@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        @include('pages/articles/flash')
+        @include('pages.flash')
         <h1>Editer un article</h1>
 
         @include('pages/articles/form')

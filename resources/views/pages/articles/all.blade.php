@@ -5,13 +5,13 @@
 @section('content')
     <div class="container">
 
-        @auth
+        @if (Auth::check() && Auth::user()->isAdmin())
             <div class="text-center" style="margin-bottom: 10px">
                 <a href="{{ route('article.create') }}" class="btn btn-primary">Ajouter un nouvel article</a>
             </div>
-        @endauth
+        @endif
 
-        <div class="row">
+        <h1>{{ $page }}</h1>
 
             <div class="card-columns">
 
@@ -27,7 +27,7 @@
                             </p>
                             <a href="{{ route('article.show', $article) }}" class="card-text">Lire la suite</a>
                         </div>
-                        @auth
+                        @if (Auth::check() && Auth::user()->isAdmin())
                         <div class="card-footer">
                             {!! Form::open(['route' => ['article.destroy', $article], 'method' => 'delete']) !!}
                             <div class="form-row text-center">
@@ -40,7 +40,7 @@
                             </div>
                             {!! Form::close() !!}
                         </div>
-                        @endauth
+                        @endif
                     </div>
 
                 @empty
@@ -52,5 +52,4 @@
             </div>
         </div>
 
-    </div>
 @endsection
