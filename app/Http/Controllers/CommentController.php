@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Comment;
 use App\Http\Requests\EditCommentRequest;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
@@ -54,7 +53,7 @@ class CommentController extends Controller
     {
         $comment = Comment::findOrFail($id);
         $comment->update($request->all());
-        return redirect(route('livre.index'));
+        return redirect(route('livre.index'))->with(['succes' => 'Votre commentaire a bien été mis à jour.']);
     }
 
     /**

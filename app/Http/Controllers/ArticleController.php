@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Article;
-use App\Category;
 use App\Http\Requests\EditArticleRequest;
-use Intervention\Image\Facades\Image;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class ArticleController extends Controller
 {
+
+    use ArticleTrait;
 
     public function __construct()
     {
@@ -33,8 +32,7 @@ class ArticleController extends Controller
 
     private function page($page)
     {
-        $articles = Category::where('name', $page)->first()->articles;
-        return view('pages/articles/all', compact('page', 'articles'));
+        return view('pages/articles/all', $this->pageArticle($page));
     }
 
     /**
@@ -44,9 +42,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        $article = new Article();
-        $categories = Category::pluck('name', 'id');
-        return view('pages/articles/create', compact('article', 'categories'));
+        return view('pages/articles/create', $this->createArticle());
     }
 
     /**
@@ -57,17 +53,7 @@ class ArticleController extends Controller
      */
     public function store(EditArticleRequest $request)
     {
-        $path = $this->uploadImage($request->file('image'));
-
-        $article = Article::create(
-            [
-                'title' => $request->get('title'),
-                'image' => $path,
-                'content' => $request->get('content'),
-                'category_id' => $request->get('category_id')
-            ]
-        );
-        return redirect(route('article.edit', $article))->with(['success' => "L'article a bien été créer"]);
+        return redirect(route('article.edit', $this->storeArticle($request)))->with(['success' => "L'article a bien été créer"]);
     }
 
     /**
@@ -78,8 +64,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        $page = $article->category->name;
-        return view ('pages/articles/show', compact('article', 'page'));
+        return view ('pages/articles/show', $this->showArticle($article));
     }
 
     /**
@@ -90,9 +75,7 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        $page = $article->category->name;
-        $categories = Category::pluck('name', 'id');
-        return view('pages/articles/edit', compact('article', 'page', 'categories'));
+        return view('pages/articles/edit', $this->editArticle($article));
     }
 
     /**
@@ -104,24 +87,7 @@ class ArticleController extends Controller
      */
     public function update(EditArticleRequest $request, Article $article)
     {
-        if ($request->hasFile('image'))
-        {
-            unlink($article->image);
-            $path = $this->uploadImage($request->file('image'));
-            $article->update([
-                'title' => $request->get('title'),
-                'image' => $path,
-                'content' => $request->get('content'),
-                'category_id' => $request->get('category_id')
-            ]);
-        }
-        else
-            $article->update([
-                'title' => $request->get('title'),
-                'content' => $request->get('content'),
-                'category_id' => $request->get('category_id')
-            ]);
-        return redirect(route('article.edit', $article))->with(['success' => "L'article a bien été mis à jour"]);
+        return redirect(route('article.edit', $this->updateArticle($request, $article)))->with(['success' => "L'article a bien été mis à jour"]);
     }
 
     /**
@@ -132,23 +98,7 @@ class ArticleController extends Controller
      */
     public function destroy(Article $article)
     {
-        unlink($article->image);
-        $article->delete();
+        $this->destroyArticle($article);
         return redirect(route('accueil'));
-    }
-
-    public function uploadImage(UploadedFile $file)
-    {
-        $path = 'img/articlesImg/'.$file->getClientOriginalName();
-
-        Image::make($file)
-//            ->oriented()
-            ->resize(500, null, function ($constraint){
-                $constraint->aspectRatio();
-            })
-            ->interlace(true)
-            ->save($path, 75);
-
-        return $path;
     }
 }

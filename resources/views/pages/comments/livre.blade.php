@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 @empty
-                    <p>Il n'y a aucun commentaire pour le moement.</p>
+                    <p>Il n'y a aucun commentaire pour le moment.</p>
                 @endforelse
     </div>
 @endsection
