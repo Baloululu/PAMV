@@ -17,6 +17,14 @@
 </head>
 <body>
 
+<!-- Header -->
+<header>
+    <div class="fondAlpha">
+        <h1 class="w3-text-pink" style="font-size: 5rem; margin-bottom: 32px;">Pierres aux milles vertus</h1>
+        <h4 class="w3-text-light-blue">Bracelets anti-stress, sommeil, ménopause...</h4>
+    </div>
+</header>
+
 <nav class="navbar navbar-expand-md fixed-top w3-gray navbar-dark box-shadow">
     <a href="{{route('accueil')}}" class="navbar-brand">Logo</a>
 
@@ -26,9 +34,6 @@
 
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="navbar-nav">
-            <li class="nav-item @yield('Accueil')">
-                <a href="{{route('accueil')}}" class="nav-link">Accueil</a>
-            </li>
             <li class="nav-item @yield('Bracelets')">
                 <a href="{{route('bracelets')}}" class="nav-link">Bracelets</a>
             </li>
@@ -44,14 +49,6 @@
         </ul>
     </div>
 </nav>
-
-<!-- Header -->
-<header>
-    <div class="fondAlpha">
-        <h1 class="w3-text-pink" style="font-size: 5rem; margin-bottom: 32px;">Pierres aux milles vertus</h1>
-        <h4 class="w3-text-light-blue">Bracelets anti-stress, sommeil, ménopause...</h4>
-    </div>
-</header>
 
 <div class="page">
     @yield('content')

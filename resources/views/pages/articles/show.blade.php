@@ -6,7 +6,7 @@
     <div class="container">
         <h1>{{$article->title}}</h1>
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-10 col-md-6">
                 <img src="../{{ $article->image }}" alt="" class="rounded" style="width: 100%">
             </div>
         </div>

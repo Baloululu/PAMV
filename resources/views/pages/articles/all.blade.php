@@ -7,7 +7,7 @@
 
         @if (Auth::check() && Auth::user()->isAdmin())
             <div class="text-center" style="margin-bottom: 10px">
-                <a href="{{ route('article.create') }}" class="btn btn-primary">Ajouter un nouvel article</a>
+                <a href="{{ route('articles.create') }}" class="btn btn-primary">Ajouter un nouvel article</a>
             </div>
         @endif
 
@@ -25,14 +25,14 @@
                             <p class="card-text">
                                 {!! str_limit($article->content, rand ( 150, 250 ), '...') !!}
                             </p>
-                            <a href="{{ route('article.show', $article) }}" class="card-text">Lire la suite</a>
+                            <a href="{{ route('articles.show', $article) }}" class="card-text">Lire la suite</a>
                         </div>
                         @if (Auth::check() && Auth::user()->isAdmin())
                         <div class="card-footer">
-                            {!! Form::open(['route' => ['article.destroy', $article], 'method' => 'delete']) !!}
+                            {!! Form::open(['route' => ['articles.destroy', $article], 'method' => 'delete']) !!}
                             <div class="form-row text-center">
                                 <div class="col">
-                                    <a href="{{ route('article.edit', $article) }}" class="btn btn-primary" title="Editer"><i class="far fa-edit"></i></a>
+                                    <a href="{{ route('articles.edit', $article) }}" class="btn btn-primary" title="Editer"><i class="far fa-edit"></i></a>
                                 </div>
                                 <div class="col">
                                     <button type="submit" class="btn btn-danger" title="Supprimer"><i class="far fa-trash-alt"></i></button>

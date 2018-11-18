@@ -1,8 +1,8 @@
 <?php
 if ($article->id)
-    $option = ['route' => ['article.update', $article], 'method' => 'put', 'files' => true];
+    $option = ['route' => ['articles.update', $article], 'method' => 'put', 'files' => true];
 else
-    $option = ['route' => 'article.store', 'files' => true];
+    $option = ['route' => 'articles.store', 'files' => true];
 ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>

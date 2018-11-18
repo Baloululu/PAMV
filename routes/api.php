@@ -32,7 +32,7 @@ Route::middleware('auth:api')->group(function () {
     Route::get('pierres', 'Api\ArticleController@pierres')
         ->name('api.pierres');
 
-    Route::resource('article', 'Api\ArticleController', [
+    Route::resource('articles', 'Api\ArticleController', [
         'except' => 'index',
         'as' => 'api'
     ]);

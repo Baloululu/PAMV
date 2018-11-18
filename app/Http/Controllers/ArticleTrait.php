@@ -14,7 +14,7 @@ trait ArticleTrait
     public function pageArticle($page)
     {
         $articles = Category::where('name', $page)->first()->articles;
-        return compact('page', 'articles');
+        return compact("page", 'articles');
     }
 
     public function createArticle()

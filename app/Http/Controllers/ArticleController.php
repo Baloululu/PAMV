@@ -53,7 +53,7 @@ class ArticleController extends Controller
      */
     public function store(EditArticleRequest $request)
     {
-        return redirect(route('article.edit', $this->storeArticle($request)))->with(['success' => "L'article a bien été créer"]);
+        return redirect(route('articles.edit', $this->storeArticle($request)))->with(['success' => "L'article a bien été créer"]);
     }
 
     /**

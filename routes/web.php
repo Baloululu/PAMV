@@ -25,7 +25,7 @@ Route::get('colliers', 'ArticleController@colliers')
 Route::get('pierres', 'ArticleController@pierres')
     ->name('pierres');
 
-Route::resource('article', 'ArticleController', ['except' => 'index']);
+Route::resource('articles', 'ArticleController', ['except' => 'index']);
 
 Route::resource('livre', 'CommentController', ['except' => ['show', 'create', 'edit']]);
 
