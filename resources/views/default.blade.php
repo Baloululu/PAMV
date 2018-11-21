@@ -26,7 +26,11 @@
 </header>
 
 <nav class="navbar navbar-expand-md fixed-top w3-gray navbar-dark box-shadow">
-    <a href="{{route('accueil')}}" class="navbar-brand">Logo</a>
+    <a href="{{route('accueil')}}" class="navbar-brand" style="font-size: 0px;">
+        <svg class="w3-fill-light-blue" style="width: 45px; height: 45px">
+            <use xlink:href="{{ asset("img/SVG-icons.svg") }}#quality" />
+        </svg>
+    </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,6 +49,9 @@
             </li>
             <li class="nav-item @yield('Livre')">
                 <a href="{{ route('livre.index') }}" class="nav-link">Livre d'or</a>
+            </li>
+            <li class="nav-item @yield('Contacts')">
+                <a href="#" class="nav-link">Contacts</a>
             </li>
         </ul>
     </div>

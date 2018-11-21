@@ -87,7 +87,7 @@ class ArticleController extends Controller
      */
     public function update(EditArticleRequest $request, Article $article)
     {
-        return redirect(route('article.edit', $this->updateArticle($request, $article)))->with(['success' => "L'article a bien été mis à jour"]);
+        return redirect(route('articles.edit', $this->updateArticle($request, $article)))->with(['success' => "L'article a bien été mis à jour"]);
     }
 
     /**
