@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
-
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
@@ -25,9 +22,9 @@
     </div>
 </header>
 
-<nav class="navbar navbar-expand-md fixed-top w3-gray navbar-dark box-shadow">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark box-shadow">
     <a href="{{route('accueil')}}" class="navbar-brand" style="font-size: 0px;">
-        <svg class="w3-fill-light-blue" style="width: 45px; height: 45px">
+        <svg class="@yield('Accueil')" style="width: 45px; height: 45px">
             <use xlink:href="{{ asset("img/SVG-icons.svg") }}#quality" />
         </svg>
     </a>
@@ -62,14 +59,14 @@
 </div>
 
 <footer>
-    <div class="container">
-        <a href="mailto:pamv88@orange.fr"><i class="fas fa-envelope w3-text-gray w3-hover-text-blue"></i></a>
-        <a href="https://www.facebook.com/fadylaurence/" target="_blank"><i class="fab fa-facebook-square w3-text-gray w3-hover-text-blue"></i></a>
-    </div>
+    <a href="mailto:pamv88@orange.fr"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.facebook.com/fadylaurence/" target="_blank"><i class="fab fa-facebook-square"></i></a>
 </footer>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </html>

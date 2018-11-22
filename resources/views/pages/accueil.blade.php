@@ -1,6 +1,6 @@
 @extends("default")
 @section('title', 'Accueil')
-@section('Accueil', 'active')
+@section('Accueil', 'w3-fill-white')
 
 @section('content')
     <div class="container">
@@ -22,7 +22,7 @@
             </div>
             <div class="col-xs-12 col-md-4">
                 <svg class="w3-fill-pink" style="width: 100%">
-                    <use xlink:href="{{ asset("img/SVG-icons.svg") }}#quality" />
+                    <use xlink:href="{{ asset("img/SVG-icons.svg") }}#quality"/>
                 </svg>
             </div>
         </div>

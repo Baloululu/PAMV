@@ -43,18 +43,43 @@
 
 @import "header";
 
+$footer-height: 60px;
+$header-first-color: $w3-pink;
+$header-second-color: lighten($w3-pink, 10%);
+$transistion-duration: 0.2s;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  margin-bottom: $footer-height;
+}
+
 .navbar{
   font-size: 1.75em;
   font-family: 'Niconne', cursive;
 
+  background: $header-first-color;
+  background: -moz-linear-gradient(top, $header-first-color 0%, $header-second-color 100%);
+  background: -webkit-linear-gradient(top, $header-first-color 0%,$header-second-color 100%);
+  background: linear-gradient(to bottom, $header-first-color 0%,$header-second-color 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$header-first-color}', endColorstr='#{$header-second-color}',GradientType=0 );
+
   .navbar-brand
   {
-    font-size: 1em;
+    fill: $navbar-dark-color;
+    transition: all $transistion-duration;
+  }
+  .navbar-brand:hover
+  {
+    fill: $navbar-dark-hover-color;
   }
 }
 
-.nav-item:hover{
-  background-color: $w3-light-gray;
+.nav-link:hover{
+  transition: all $transistion-duration;
 }
 
 .page{
@@ -90,4 +115,26 @@
 footer {
   font-size: 2em;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  line-height: $footer-height;
+
+  background: $header-first-color;
+  background: -moz-linear-gradient(top, $header-second-color 0%, $header-first-color 100%);
+  background: -webkit-linear-gradient(top, $header-second-color 0%,$header-first-color 100%);
+  background: linear-gradient(to bottom, $header-second-color 0%,$header-first-color 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$header-second-color}', endColorstr='#{$header-first-color}',GradientType=0 );
+
+  a{
+    i{
+      color: $w3-light-blue;
+      transition: all $transistion-duration;
+    }
+    i:hover
+    {
+      color: $w3-white;
+    }
+  }
 }
