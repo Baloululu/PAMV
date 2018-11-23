@@ -12,4 +12,6 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
+    .copy('node_modules/tinymce', 'public/js/tinymce')
+    .js('resources/assets/js/tinymce/langs/fr_FR.js', 'public/js/tinymce/langs')
    .sass('resources/assets/sass/app.scss', 'public/css');

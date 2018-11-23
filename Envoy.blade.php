@@ -67,6 +67,6 @@
     composer dump-autoload -o;
     rm -f {{$current}};
     ln -s {{$release}}/public {{$current}};
-    ls {{$dir}}/releases | sort -r | tail -n +{{$nbreleases + 1}} | xargs -I{} -r rm -rf {{$dir}}/releases/{};
+    ls {{$dir}}/releases | sort -r | tail -n +{{$nbreleases + 1}} | sudo xargs -I{} -r rm -rf {{$dir}}/releases/{};
     echo "Lien : {{$current}} --> {{$release}}/public";
 @endtask

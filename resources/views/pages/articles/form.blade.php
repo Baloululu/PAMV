@@ -5,8 +5,15 @@ else
     $option = ['route' => 'articles.store', 'files' => true];
 ?>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
-<script src="{{ asset('js/summernote-fr-FR.js') }}"></script>
+{{--<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>--}}
+<script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+<script>
+    tinymce.init({
+        selector: '#content',
+        plugins: "lists",
+        language: "fr_FR"
+    });
+</script>
 
 @include('pages/erreurs')
 
@@ -35,19 +42,5 @@ else
 <div class="form-group">
     {!! Form::submit('Sauvegarder', ['class' => 'btn btn-primary']) !!}
 </div>
-
-<script>
-    $('#content').summernote({
-        tabsize: 2,
-        height: 300,
-        toolbar: [
-            ['style', ['bold', 'italic', 'underline', 'clear']],
-            ['font', ['strikethrough', 'superscript', 'subscript']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']]
-        ],
-        lang: "fr-FR"
-    });
-</script>
 
 {!! Form::close() !!}

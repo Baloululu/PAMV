@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "tinymce",
+        "scope": null,
+        "escapedName": "tinymce",
+        "name": "tinymce",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/bastien/Documents/siteApache/pamv"
+    ]
+  ],
+  "_from": "tinymce@latest",
+  "_hasShrinkwrap": false,
+  "_id": "tinymce@4.8.5",
+  "_inCache": true,
+  "_location": "/tinymce",
+  "_nodeVersion": "8.9.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/tinymce_4.8.5_1540972633748_0.019300202123779808"
+  },
+  "_npmUser": {
+    "name": "ephox",
+    "email": "npm-publish@tiny.cloud"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "tinymce",
+    "scope": null,
+    "escapedName": "tinymce",
+    "name": "tinymce",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/tinymce/-/tinymce-4.8.5.tgz",
+  "_shasum": "a80ea66c4f90078bd93625b0f0914a4f774e0af3",
+  "_shrinkwrap": null,
+  "_spec": "tinymce",
+  "_where": "/home/bastien/Documents/siteApache/pamv",
+  "author": {
+    "name": "Ephox Corporation"
+  },
+  "bugs": {
+    "url": "https://github.com/tinymce/tinymce/issues"
+  },
+  "dependencies": {},
+  "description": "Web based JavaScript HTML WYSIWYG editor control.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-1V6+PxP5Kp8H/Kuf+EOe6vyrtj1Dlj98q33DgiKGoGPTmbcQaVZWiT+lhqj8ICXKVLV3YxAieOJyJXai4SLHQg==",
+    "shasum": "a80ea66c4f90078bd93625b0f0914a4f774e0af3",
+    "tarball": "https://registry.npmjs.org/tinymce/-/tinymce-4.8.5.tgz",
+    "fileCount": 185,
+    "unpackedSize": 4498459,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb2WBaCRA9TVsSAnZWagAAA70P/3pkg0zAseOW/RwQstIR\ntogwAQWVyz3VqH9jXo2Pab+S5kVy3XNH1GR4pU7TTXuYBCyqY/zhr/06kkMi\ncp8s/aC1mhDHff72lImsLjCTTTnTdpKMLZ3MWmLaM8a6s5LUQ8BYLzD14uFQ\nlu8HjLCf/5Bqd4lOBbMgyjAJJr1AFSyMTu2DxLlSSO3B7Tkrp6UUGhUOSQkv\nt/dmcr6Yp0SP+OKPHaQlzffhOrPg3ajaI7Lj8Im+iyInO6HFdvbLJCUvJR5P\ndzr0gSB+WN3HiF9Iatx0CM1bK+gMvZLfs//GO7sxqV6AgV7qwccM/EZsT2bm\nJPRm0refMDrw6qDYwinlHwb6EUgGpLRAoXNRoEO1pFqLzA/gwXPSN5l0ItGb\nYh4KCtrcf+qWnApX0KSCMnQNtUFchOZLPaU2HdJb6/dYhxe2NzvyxUvo0QWc\nZChwpEhL2l+/VBiEf2lyQ1CW7Bq42puDDrnKMJ/8JxNIJQpkfyUcmV/P8VUw\nR6dABgay1Pc+6J4aM8UVTvpZo93Ihfq/5Lt6gbwj3ZBIusjxW6IfS/xaXrHM\n8pp36psX7XI0JL5E2QqOddgj2bt5xs0VePl19vDwgFsOSxar6eWcjnsytkzM\nlVcnp/RzNe5KG6nMLEoIhT4PC13YTJ18ucWVfsnRbg2GqfEccsJAxx2gMhdq\nto6W\r\n=gobX\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "homepage": "https://github.com/tinymce/tinymce-dist#readme",
+  "keywords": [
+    "editor",
+    "wysiwyg",
+    "tinymce",
+    "richtext",
+    "javascript",
+    "html"
+  ],
+  "license": "LGPL-2.1",
+  "main": "tinymce.js",
+  "maintainers": [
+    {
+      "name": "ephox",
+      "email": "is-accounts@ephox.com"
+    },
+    {
+      "name": "spocke",
+      "email": "spocke@moxiecode.com"
+    }
+  ],
+  "name": "tinymce",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinymce/tinymce-dist.git"
+  },
+  "version": "4.8.5"
+}
