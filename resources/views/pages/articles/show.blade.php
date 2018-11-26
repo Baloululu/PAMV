@@ -11,7 +11,7 @@
             </div>
         </div>
 
-        <div class="text-justify" style="margin-top: 15px">
+        <div class="article">
             {!! $article->content !!}
         </div>
     </div>

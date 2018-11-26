@@ -100,6 +100,13 @@ body{
   }
 }
 
+.article
+{
+  color: $w3-gray;
+  text-align: justify;
+  margin-top: 15px;
+}
+
 .box-shadow{
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
 }
