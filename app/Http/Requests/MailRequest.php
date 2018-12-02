@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\Captcha;
 use Illuminate\Foundation\Http\FormRequest;
 
 class MailRequest extends FormRequest
@@ -26,7 +27,8 @@ class MailRequest extends FormRequest
         return [
             'email' => 'required|email',
             'content' => 'required',
-            'object' => 'required'
+            'object' => 'required',
+            'g-recaptcha-response' => new Captcha()
         ];
     }
 }
