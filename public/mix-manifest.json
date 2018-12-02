@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/js/tinymce/langs/fr_FR.js": "/js/tinymce/langs/fr_FR.js"
+    "/js/tinymce/langs/fr_FR.js": "/js/tinymce/langs/fr_FR.js",
+    "/js/openmap.js": "/js/openmap.js"
 }

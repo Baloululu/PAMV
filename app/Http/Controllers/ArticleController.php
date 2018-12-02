@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Http\Requests\EditArticleRequest;
+use Carbon\Carbon;
 
 class ArticleController extends Controller
 {
@@ -32,6 +33,7 @@ class ArticleController extends Controller
 
     private function page($page)
     {
+        Carbon::setLocale(config('app.locale'));
         return view('pages/articles/all', $this->pageArticle($page));
     }
 

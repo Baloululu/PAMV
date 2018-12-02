@@ -1,3 +1,6 @@
+$header-first-color: $w3-pink;
+$header-second-color: lighten($w3-pink, 10%);
+
 header{
   background-image: url($appPath + "/img/fond.jpg");
   background-attachment: fixed;
@@ -11,4 +14,29 @@ header{
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
   text-align: center;
+}
+
+.navbar{
+  font-size: 1.75em;
+  font-family: 'Niconne', cursive;
+
+  background: $header-first-color;
+  background: -moz-linear-gradient(top, $header-first-color 0%, $header-second-color 100%);
+  background: -webkit-linear-gradient(top, $header-first-color 0%,$header-second-color 100%);
+  background: linear-gradient(to bottom, $header-first-color 0%,$header-second-color 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$header-first-color}', endColorstr='#{$header-second-color}',GradientType=0 );
+
+  .navbar-brand
+  {
+    fill: $navbar-dark-color;
+    transition: all $transistion-duration;
+  }
+  .navbar-brand:hover
+  {
+    fill: $navbar-dark-hover-color;
+  }
+}
+
+.nav-link:hover{
+  transition: all $transistion-duration;
 }

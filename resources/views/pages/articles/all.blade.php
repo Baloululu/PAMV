@@ -13,22 +13,23 @@
 
         <h1>{{ $page }}</h1>
 
-            <div class="card-columns">
+        <div class="card-columns">
 
-                @forelse($articles as $article)
-                    <div class="card">
-                        <img src="{{ $article->image }}" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                {{ $article->title }}
-                            </h5>
-                            <p class="card-text">
-                                {!! str_limit($article->content, rand ( 150, 250 ), '...') !!}
-                            </p>
-                            <a href="{{ route('articles.show', $article) }}" class="card-text">Lire la suite</a>
-                        </div>
+            @forelse($articles as $article)
+                <div class="card">
+                    <img src="{{ $article->image }}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{ $article->title }}
+                        </h5>
+                        <p class="card-text">
+                            {!! str_limit($article->content, rand ( 150, 250 ), '...') !!}
+                        </p>
+                        <a href="{{ route('articles.show', $article) }}" class="card-text">Lire la suite</a>
+                    </div>
+                    <div class="card-footer text-right">
+                        {{ $article->created_at->diffForHumans() }}
                         @if (Auth::check() && Auth::user()->isAdmin())
-                        <div class="card-footer">
                             {!! Form::open(['route' => ['articles.destroy', $article], 'method' => 'delete']) !!}
                             <div class="form-row text-center">
                                 <div class="col">
@@ -39,17 +40,17 @@
                                 </div>
                             </div>
                             {!! Form::close() !!}
-                        </div>
                         @endif
                     </div>
+                </div>
 
-                @empty
-                    <div class="col-xs-12">
-                        <p>Aucun article.</p>
-                    </div>
-                @endforelse
+            @empty
+                <div class="col-xs-12">
+                    <p>Aucun article.</p>
+                </div>
+            @endforelse
 
-            </div>
         </div>
+    </div>
 
 @endsection

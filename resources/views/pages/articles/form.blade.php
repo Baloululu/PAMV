@@ -5,16 +5,6 @@ else
     $option = ['route' => 'articles.store', 'files' => true];
 ?>
 
-{{--<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>--}}
-<script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
-<script>
-    tinymce.init({
-        selector: '#content',
-        plugins: "lists",
-        language: "fr_FR"
-    });
-</script>
-
 @include('pages/erreurs')
 
 {!! Form::model($article, $option) !!}
@@ -26,7 +16,7 @@ else
 
 <div class="form-group">
     {!! Form::label('title', 'Titre') !!}
-    {!! Form::text('title', null, ['class' => 'form-control '.($errors->has('title') ? ' is-invalid' : '')]) !!}
+    {!! Form::text('title', null, ['class' => 'form-control '.($errors->has('title') ? ' is-invalid' : ''), 'required' => 'required']) !!}
 </div>
 
 <div class="form-group">
@@ -44,3 +34,14 @@ else
 </div>
 
 {!! Form::close() !!}
+
+@section('scripts')
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+    <script>
+        tinymce.init({
+            selector: '#content',
+            plugins: "lists",
+            language: "fr_FR"
+        });
+    </script>
+@endsection

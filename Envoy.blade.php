@@ -1,4 +1,5 @@
-@servers(['web' => 'pi@192.168.1.22 -p 222'])
+{{--@servers(['web' => 'pi@192.168.1.22 -p 222'])--}}
+@servers(['web' => 'pi@dyn.raspberrydemontbeliard.ovh -p 222'])
 
 @setup
     $dir="/home/pi/pamv";

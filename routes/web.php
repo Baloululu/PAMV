@@ -25,6 +25,12 @@ Route::get('colliers', 'ArticleController@colliers')
 Route::get('pierres', 'ArticleController@pierres')
     ->name('pierres');
 
+Route::get('contacts', 'ContactController@index')
+    ->name('contacts');
+
+Route::post('mail', 'ContactController@sendMail')
+    ->name('mail');
+
 Route::resource('articles', 'ArticleController', ['except' => 'index']);
 
 Route::resource('livre', 'CommentController', ['except' => ['show', 'create', 'edit']]);
