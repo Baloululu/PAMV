@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-8">
 
-                {!! Form::open(['url' => route('mail'), 'method' => 'post', 'id' => 'mail-form']) !!}
+                {!! Form::open(['route' => 'mail', 'method' => 'post', 'id' => 'mail-form']) !!}
 
                 <div class="form-group">
                     {!! Form::label('email', 'Adresse mail') !!}
@@ -44,9 +44,27 @@
                 <fieldset class="contactsFieldset">
                     <legend>Laurence Fady</legend>
                     <p>
-                        13 rue du pré martin<br>
+                        13 Rue du pré Martin<br>
                         88360 Rupt Sur Moselle<br>
                         <a href="mailto:pamv88@orange.fr">pamv88@orange.fr</a>
+                    </p>
+                </fieldset>
+
+                <fieldset class="contactsFieldset">
+                    <legend>Kiou</legend>
+                    <p>
+                        2 Quai de la Parelle<br>
+                        88360 Rupt Sur Moselle<br>
+                        <a href="http://maisondebeautekiou.com/" target="_blank">Site web</a>
+                    </p>
+                </fieldset>
+
+                <fieldset class="contactsFieldset">
+                    <legend>L'Aura Zen</legend>
+                    <p>
+                        12 Rue Albert Jacquemin<br>
+                        88120 Vagney<br>
+                        <a href="http://laurazenesthetique.fr/" target="_blank">Site web</a>
                     </p>
                 </fieldset>
             </div>

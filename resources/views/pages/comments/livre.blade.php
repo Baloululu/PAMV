@@ -21,15 +21,29 @@
                             {{ $comment->user->name }}
                         </div>
                         <div class="card-body">
-
-                            @if (Auth::check() && Auth::user()->id == $comment->user_id)
-                                @include('pages/comments/form')
-                            @else
-                                <p class="card-text">{{ $comment->content }}</p>
-                            @endif
+                            <p class="card-text">{{ $comment->content }}</p>
                         </div>
                         <div class="card-footer text-right">
                             {{ $comment->created_at->diffForHumans() }}
+
+                            @if (Auth::check() && Auth::user()->isAdmin())
+
+                                {!! Form::model($comment, ['route' => ['livre.update', $comment], 'method' => 'put']) !!}
+
+                            <div class="form-row align-items-center">
+                                <div class="col-auto">
+                                    {!! Form::label('validate', 'En ligne') !!}
+                                    {!! Form::checkbox('validate', null, ['class' => 'form-check-input ']) !!}
+                                </div>
+
+                                <div class="col-auto">
+                                    {!! Form::submit('Enregistrer', ['class' => 'btn btn-primary']) !!}
+                                </div>
+                            </div>
+                                {!! Form::close() !!}
+
+                            @endif
+
                         </div>
                     </div>
                 @empty
