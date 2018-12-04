@@ -5,10 +5,16 @@ namespace App\Http\Controllers;
 use App\Comment;
 use App\Http\Requests\EditCommentRequest;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin')->except(['index', 'store']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -19,7 +25,7 @@ class CommentController extends Controller
         Carbon::setLocale(config('app.locale'));
         $newComment = new Comment();
         if (Auth::check() && Auth::user()->isAdmin())
-            $comments = Comment::with('user')->orderBy('updated_at', 'DESC')->get();
+            $comments = Comment::with('user')->orderBy('validate')->get();
         else
             $comments = Comment::with('user')->published()->get();
         return view('pages/comments/livre', compact('newComment', 'comments'));
@@ -49,11 +55,22 @@ class CommentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(EditCommentRequest $request, $id)
+    public function update(Request $request, $id)
     {
         $comment = Comment::findOrFail($id);
-        $comment->update($request->all());
-        return redirect(route('livre.index'))->with(['succes' => 'Votre commentaire a bien été mis à jour.']);
+
+        if ($request->has('validate'.$id))
+        {
+            $comment->update(['validate' => true]);
+            $message = "Le commentaire a bien été mis en ligne.";
+        }
+        else
+        {
+            $comment->update(['validate' => false]);
+            $message = "Le commentaire a été retiré du site.";
+        }
+
+        return redirect(route('livre.index'))->with(['success' => $message]);
     }
 
     /**
@@ -66,6 +83,6 @@ class CommentController extends Controller
     {
         $comment = Comment::findOrFail($id);
         $comment->delete();
-        return redirect(route('livre.index'))-with(['succes' => "Votre commentaire a bien été supprimé."]);
+        return redirect(route('livre.index'))->with(['success' => "Le commentaire a bien été supprimé."]);
     }
 }

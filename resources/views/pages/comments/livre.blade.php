@@ -6,6 +6,7 @@
     <div class="container">
         @include('pages.flash')
         <h1>Livre d'or</h1>
+
         @guest
             <div class="alert alert-info">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -24,24 +25,33 @@
                             <p class="card-text">{{ $comment->content }}</p>
                         </div>
                         <div class="card-footer text-right">
-                            {{ $comment->created_at->diffForHumans() }}
-
                             @if (Auth::check() && Auth::user()->isAdmin())
 
-                                {!! Form::model($comment, ['route' => ['livre.update', $comment], 'method' => 'put']) !!}
+                                <div class="form-row align-items-center float-right">
 
-                            <div class="form-row align-items-center">
-                                <div class="col-auto">
-                                    {!! Form::label('validate', 'En ligne') !!}
-                                    {!! Form::checkbox('validate', null, ['class' => 'form-check-input ']) !!}
+                                    <div class="col-auto">
+                                        {!! Form::open(['route' => ['livre.update', $comment], 'method' => 'put']) !!}
+
+                                        {!! Form::label('validate'.$comment->id, 'En ligne', ['style' => 'cursor:pointer']) !!}
+                                        {!! Form::checkbox('validate'.$comment->id, null, $comment->validate, ['onChange' => "this.form.submit()", 'style' => 'cursor:pointer']) !!}
+
+                                        {!! Form::close() !!}
+                                    </div>
+
+                                    <div class="col-auto">
+                                        {!! Form::open(['route' => ['livre.destroy', $comment], 'method' => 'delete']) !!}
+
+                                        <button type="submit" class="btn btn-danger" title="Supprimer"><i class="far fa-trash-alt"></i></button>
+
+                                        {!! Form::close() !!}
+                                    </div>
+
+                                    <div class="col-auto">
+                                        {{ $comment->created_at->diffForHumans() }}
+                                    </div>
                                 </div>
-
-                                <div class="col-auto">
-                                    {!! Form::submit('Enregistrer', ['class' => 'btn btn-primary']) !!}
-                                </div>
-                            </div>
-                                {!! Form::close() !!}
-
+                            @else
+                                {{ $comment->created_at->diffForHumans() }}
                             @endif
 
                         </div>

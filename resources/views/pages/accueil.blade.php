@@ -21,9 +21,7 @@
 
             </div>
             <div class="col-xs-12 col-md-4">
-                <svg class="w3-fill-pink" style="width: 100%">
-                    <use xlink:href="{{ asset("img/SVG-icons.svg") }}#quality"/>
-                </svg>
+                <img src="{{ asset('img/pamv_carte.svg') }}" style="width: 100%">
             </div>
         </div>
     </div>

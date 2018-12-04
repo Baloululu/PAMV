@@ -69,10 +69,13 @@
                 </fieldset>
             </div>
         </div>
-
-        <div id="map" class="mapContainer" ></div>
     </div>
 
+    <div class="w3-light-gray">
+        <div class="container">
+            <div id="map" class="mapContainer" ></div>
+        </div>
+    </div>
 @endsection
 
 @section('scripts')
