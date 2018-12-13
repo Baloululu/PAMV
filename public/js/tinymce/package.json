@@ -2,26 +2,26 @@
   "_args": [
     [
       {
-        "raw": "tinymce",
+        "raw": "tinymce@^4.9.1",
         "scope": null,
         "escapedName": "tinymce",
         "name": "tinymce",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "rawSpec": "^4.9.1",
+        "spec": ">=4.9.1 <5.0.0",
+        "type": "range"
       },
       "/home/bastien/Documents/siteApache/pamv"
     ]
   ],
-  "_from": "tinymce@latest",
+  "_from": "tinymce@>=4.9.1 <5.0.0",
   "_hasShrinkwrap": false,
-  "_id": "tinymce@4.8.5",
+  "_id": "tinymce@4.9.1",
   "_inCache": true,
   "_location": "/tinymce",
   "_nodeVersion": "8.9.3",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/tinymce_4.8.5_1540972633748_0.019300202123779808"
+    "tmp": "tmp/tinymce_4.9.1_1543932824960_0.04285342073931542"
   },
   "_npmUser": {
     "name": "ephox",
@@ -30,21 +30,21 @@
   "_npmVersion": "5.5.1",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "tinymce",
+    "raw": "tinymce@^4.9.1",
     "scope": null,
     "escapedName": "tinymce",
     "name": "tinymce",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "rawSpec": "^4.9.1",
+    "spec": ">=4.9.1 <5.0.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#USER"
+    "/"
   ],
-  "_resolved": "https://registry.npmjs.org/tinymce/-/tinymce-4.8.5.tgz",
-  "_shasum": "a80ea66c4f90078bd93625b0f0914a4f774e0af3",
+  "_resolved": "https://registry.npmjs.org/tinymce/-/tinymce-4.9.1.tgz",
+  "_shasum": "821cecb103982ec8e37aae44a8f732849e3660d0",
   "_shrinkwrap": null,
-  "_spec": "tinymce",
+  "_spec": "tinymce@^4.9.1",
   "_where": "/home/bastien/Documents/siteApache/pamv",
   "author": {
     "name": "Ephox Corporation"
@@ -57,12 +57,12 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "integrity": "sha512-1V6+PxP5Kp8H/Kuf+EOe6vyrtj1Dlj98q33DgiKGoGPTmbcQaVZWiT+lhqj8ICXKVLV3YxAieOJyJXai4SLHQg==",
-    "shasum": "a80ea66c4f90078bd93625b0f0914a4f774e0af3",
-    "tarball": "https://registry.npmjs.org/tinymce/-/tinymce-4.8.5.tgz",
+    "integrity": "sha512-lGk6QFI2KYWnIkti0TvtN30GIgJAfWWl8LBqUYdnHuywrNvgl92fqrQHhUP7YChHNhiYZj6JAy8M5cwVlbO7iQ==",
+    "shasum": "821cecb103982ec8e37aae44a8f732849e3660d0",
+    "tarball": "https://registry.npmjs.org/tinymce/-/tinymce-4.9.1.tgz",
     "fileCount": 185,
-    "unpackedSize": 4498459,
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb2WBaCRA9TVsSAnZWagAAA70P/3pkg0zAseOW/RwQstIR\ntogwAQWVyz3VqH9jXo2Pab+S5kVy3XNH1GR4pU7TTXuYBCyqY/zhr/06kkMi\ncp8s/aC1mhDHff72lImsLjCTTTnTdpKMLZ3MWmLaM8a6s5LUQ8BYLzD14uFQ\nlu8HjLCf/5Bqd4lOBbMgyjAJJr1AFSyMTu2DxLlSSO3B7Tkrp6UUGhUOSQkv\nt/dmcr6Yp0SP+OKPHaQlzffhOrPg3ajaI7Lj8Im+iyInO6HFdvbLJCUvJR5P\ndzr0gSB+WN3HiF9Iatx0CM1bK+gMvZLfs//GO7sxqV6AgV7qwccM/EZsT2bm\nJPRm0refMDrw6qDYwinlHwb6EUgGpLRAoXNRoEO1pFqLzA/gwXPSN5l0ItGb\nYh4KCtrcf+qWnApX0KSCMnQNtUFchOZLPaU2HdJb6/dYhxe2NzvyxUvo0QWc\nZChwpEhL2l+/VBiEf2lyQ1CW7Bq42puDDrnKMJ/8JxNIJQpkfyUcmV/P8VUw\nR6dABgay1Pc+6J4aM8UVTvpZo93Ihfq/5Lt6gbwj3ZBIusjxW6IfS/xaXrHM\n8pp36psX7XI0JL5E2QqOddgj2bt5xs0VePl19vDwgFsOSxar6eWcjnsytkzM\nlVcnp/RzNe5KG6nMLEoIhT4PC13YTJ18ucWVfsnRbg2GqfEccsJAxx2gMhdq\nto6W\r\n=gobX\r\n-----END PGP SIGNATURE-----\r\n"
+    "unpackedSize": 4578008,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcBouZCRA9TVsSAnZWagAAT4UP/AsML0k3wMdaoASUwfXj\nMIp9h7NDkIAEv5iUdDn67W96F47JzEldtN+ul13gZ34FiHPxLeMpbKpE0ljV\nZkuLNKixmFj7TSATIH2qGfY4gMiTv+TNTKECpdgucmINEhnonoxT/KLOwsNt\nIxnNwsG1iFysuB7Jb3AcQzvCWlJ9fqJsF+iYkrv+/44wxzUXCtp0TvYav6a/\nAxYmc+VEMCyZulb2wUnH8Mte3LwsS2gz3Ju7/mdQKD0MziWDl2Drx4Vexy6/\n6WkwvKBBZDIvSpDV8cS+afKoIx3e7mW/1je12ObzlarOiyI8e1RHUAVu75xE\nc5Q4AfmdY4TY0IwpfrtCdqVuv5T++oHpsCnMliKzUoM2ZkOMVS+BjV+m9zSw\nOqgm2njA76/JR7Tm5N2JRlhyweP3Ezz2P9fmQSll3Xe6GNBL8FQfMBX7iJJ9\nFtDdicyZzszWVNeB6/UGn6n26Vumpw2emj7FOUkkt4A6NBRlAMfY3d/BbAyH\nVS9iohH+PHkKQyK0yIHdTNyeqphk4EusAOq+z8PstPaUmgUQBNz28CvvPlkh\njPL6xyA2tZW9DW+yRLaLNNkZ5Jcg8nujaRZuwf3HXSo0QfNgrbl6o9/m5tTe\nNzFYaiFW0W6OPKtmpAPZfE2o9jLObPZKi3J9bOlArO6P3OwABky8Ng9RurDY\nUMrq\r\n=Qo62\r\n-----END PGP SIGNATURE-----\r\n"
   },
   "homepage": "https://github.com/tinymce/tinymce-dist#readme",
   "keywords": [
@@ -92,5 +92,5 @@
     "type": "git",
     "url": "git+https://github.com/tinymce/tinymce-dist.git"
   },
-  "version": "4.8.5"
+  "version": "4.9.1"
 }
