@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -19,14 +19,14 @@
 <!-- Header -->
 <header>
     <div class="fondAlpha">
-        <h1 class="w3-text-pink" style="font-size: 5rem; margin-bottom: 32px;">Pierres aux milles vertus</h1>
+        <h1 class="w3-text-pink">Pierres aux milles vertus</h1>
         <h4 class="w3-text-light-blue">Bracelets anti-stress, sommeil, ménopause...</h4>
     </div>
 </header>
 
 <nav class="navbar navbar-expand-md fixed-top navbar-dark box-shadow">
     <a href="{{route('accueil')}}" class="navbar-brand" style="font-size: 0px;">
-        <svg class="@yield('Accueil')" style="width: 45px; height: 45px">
+        <svg class="@yield('Accueil')" style="width: 40px; height: 40px">
             <use xlink:href="{{ asset("img/SVG-icons.svg") }}#quality" />
         </svg>
     </a>
@@ -36,21 +36,26 @@
     </button>
 
     <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-            <li class="nav-item @yield('Bracelets')">
+        <ul class="nav navbar-nav">
+            <li class="@yield('Bracelets')">
                 <a href="{{route('bracelets')}}" class="nav-link">Bracelets</a>
             </li>
-            <li class="nav-item @yield('Colliers')">
+            <li class="@yield('Colliers')">
                 <a href="{{route('colliers')}}" class="nav-link">Colliers</a>
             </li>
-            <li class="nav-item @yield('Pierres')">
+            <li class="@yield('Pierres')">
                 <a href="{{route('pierres')}}" class="nav-link">Pierres</a>
             </li>
-            <li class="nav-item @yield('Livre')">
+            <li class="@yield('Livre')">
                 <a href="{{ route('livre.index') }}" class="nav-link">Livre d'or</a>
             </li>
-            <li class="nav-item @yield('Contacts')">
+            <li class="@yield('Contacts')">
                 <a href="{{ route('contacts') }}" class="nav-link">Contacts</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li>
+                <a href="{{ route('home') }}" class="nav-link"><i class="fas fa-home"></i></a>
             </li>
         </ul>
     </div>
