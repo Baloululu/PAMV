@@ -6,6 +6,7 @@
 /.idea
 /.vscode
 /.vagrant
+
 Homestead.json
 Homestead.yaml
 npm-debug.log
@@ -16,4 +17,4 @@ package-lock.json
 *.lock
 public/img/articlesImg/*
 Notes_JJ_Sur_Site.txt
-resources/assets/sass/_variables.scss
+resources/assets/sass/_env.scss
