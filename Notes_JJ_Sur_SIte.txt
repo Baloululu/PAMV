@@ -1,0 +1,59 @@
+Notes de JJ sur le site 
+
+Remarque : démarrer le seveur apache avec 
+
+	sudo /opt/lamp/lamp start
+
+
+Pour charger les sources et les mettre à jour =>
+
+	/Developpements/repo/ git pull
+
+Permet de se connecter au raspberry qui demande le mot de passe lié à la clef que j'avais mis en place 
+
+	MDP = valjean
+
+
+Puis mettre à jour les composants et leurs dépendances
+
+	composer update
+
+
+Il faut ensuite mettre à jour la base de données
+
+	php artisan migrate
+
+
+Option suite mise en place par Balou des tocken pour les api
+
+	Pour générer la clef privée qui permettre de calculer les tocken
+		php artisan passport:keys 
+
+	Puis calcul de la clef client
+		php artisan passport:client --password
+
+
+Pour récupérer son ip (avec son hostname par défaut = raspberry)
+ping raspberry.local 
+
+=> sinon voir sur le routeur
+
+
+Pour le raspberrypi zero 
+nouveau nom => pizero 
+
+voir le site pour avoir PHP 7.3
+https://tutoandco.colas-delmas.fr/developpement/installer-php7-1-php7-1-fpm-debian-raspberry-raspbian/
+
+commande 
+
+echo deb http://mirrordirector.raspbian.org/raspbian/dists/buster main contrib non-free rpi > /etc/apt/sources.list.d/php.list
+apt-get update
+
+
+ssh pi@pizero.local
+
+Mot de passe = Venator88
+
+
+connexion à montbéliard => ssh pi@dyn.raspberrydemontbeliard.ovh -p 222
