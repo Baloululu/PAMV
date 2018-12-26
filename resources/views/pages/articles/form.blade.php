@@ -25,6 +25,11 @@ else
 </div>
 
 <div class="form-group">
+    {!! Form::label('intro', 'Présentation de l\'article') !!}
+    {!! Form::textArea('intro', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
     {!! Form::label('content', 'Contenu') !!}
     {!! Form::textArea('content', null, ['class' => 'form-control']) !!}
 </div>

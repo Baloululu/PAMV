@@ -14,7 +14,7 @@
 
     @yield('head')
 
-    <title>PAMV : @yield('title')</title>
+    <title>{{ config('app.name', 'Laravel') }} : @yield('title')</title>
 </head>
 <body>
 

@@ -23,9 +23,9 @@
                             {{ $article->title }}
                         </h5>
                         <p class="card-text">
-                            {!! str_limit($article->content, rand ( 150, 250 ), '...') !!}
+                            {{ $article->intro }}
                         </p>
-                        <a href="{{ route('articles.show', $article) }}" class="card-text">Lire la suite</a>
+                        <a href="{{ route('articles.show', $article) }}" class="card-text">Plus de détails</a>
                     </div>
                     <div class="card-footer text-right">
                         {{ $article->created_at->diffForHumans() }}
