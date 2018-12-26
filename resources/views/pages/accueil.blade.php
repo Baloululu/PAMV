@@ -50,7 +50,7 @@
                         absorbée vers l’intérieur.
                         Tout notre corps est gouverné par trois canaux verticaux dans lesquels l’énergie circule, et par
                         sept chakras principaux.
-                        Lorsque l’énergie se retrouve bloquée dans l’un ou tous vos chakras, cela peut souvent entraîner
+                        Lorsque l’énergie se retrouve bloquée dans un ou plusieurs chakras, cela peut souvent entraîner
                         des maladies ou des absences. Il est donc important de comprendre ce que représente chaque
                         chakra et ce que vous pouvez faire pour leur offrir un soutien et maintenir la circulation des
                         flux d’énergie.</p>
@@ -84,10 +84,9 @@
                         <div class="card-body">
                             <ul class="w3-text-gray">
                                 <li>Il représente le fondement de nos actes et le sentiment d’avoir une base.</li>
-                                <li>Emplacement&#8239;: À la base de la colonne vertébrale, au niveau du coccyx.</li>
-                                <li>Les enjeux émotifs&#8239;: Les questions liées à la survie telles que
-                                    l’autosuffisance
-                                    financière, l’argent et la nourriture.
+                                <li>Emplacement&#8239;: à la base de la colonne vertébrale, au niveau du coccyx.</li>
+                                <li>Les enjeux émotifs&#8239;: les questions liées à la survie telles que
+                                    l’autosuffisance financière, l’argent et la nourriture.
                                 </li>
                                 <li>Les pierres&#8239;: de lave&#8239;; hématite&#8239;; fluorite&#8239;; jaspe rouge&#8239;;
                                     bronzite&#8239;; tourmaline noire&#8239;; agate rouge&#8239;; corail fossilisé.
@@ -120,17 +119,14 @@
                         <div class="card-body">
                             <ul class="w3-text-gray">
                                 <li>Notre connexion et aptitude à accepter l’autre et les nouvelles expériences.</li>
-                                <li>Emplacement: Au niveau de la partie inférieure de l’abdomen, environ cinq
-                                    centimètres sous
-                                    le nombril.
+                                <li>Emplacement&#8239;: au niveau de la partie inférieure de l’abdomen, environ cinq
+                                    centimètres sous le nombril.
                                 </li>
-                                <li>Les enjeux émotifs&#8239;: La sensation de vivre dans l’abondance, le bien-être, le
-                                    plaisir
-                                    et l’intimité.
+                                <li>Les enjeux émotifs&#8239;: la sensation de vivre dans l’abondance, le bien-être, le
+                                    plaisir et l’intimité.
                                 </li>
                                 <li>Les pierres&#8239;: cornaline&#8239;; de lune&#8239;; tourmaline noire&#8239;;
-                                    bronzite&#8239;;
-                                    fluorite.
+                                    bronzite&#8239;; fluorite.
                                 </li>
                             </ul>
                         </div>
@@ -161,13 +157,12 @@
                         <div class="card-body">
                             <ul class="w3-text-gray">
                                 <li>Notre capacité à être confiant et à exercer un contrôle sur notre vie.</li>
-                                <li>Emplacement&#8239;: La partie supérieure de l’abdomen, dans la région de
+                                <li>Emplacement&#8239;: la partie supérieure de l’abdomen, dans la région de
                                     l’estomac.
                                 </li>
-                                <li>Les enjeux émotifs&#8239;: La confiance en soi et l’estime de soi.</li>
+                                <li>Les enjeux émotifs&#8239;: la confiance en soi et l’estime de soi.</li>
                                 <li>Les pierres&#8239;: ambre&#8239;; fluorite&#8239;; citrine&#8239;; soleil&#8239;;
-                                    œil de
-                                    taureau et de tigre&#8239;; bronzite&#8239;; tourmaline noire&#8239;; amétrine&#8239;;
+                                    œil de taureau et de tigre&#8239;; bronzite&#8239;; tourmaline noire&#8239;; amétrine&#8239;;
                                     corail fossilisé&#8239;; apatite&#8239;; cornaline.
                                 </li>
                             </ul>
@@ -199,8 +194,8 @@
                         <div class="card-body">
                             <ul class="w3-text-gray">
                                 <li>Notre capacité à aimer.</li>
-                                <li>Emplacement&#8239;: Situé sur la poitrine, juste au-dessus du cœur.</li>
-                                <li>Les enjeux émotifs&#8239;: L’amour, la joie et la paix intérieure.</li>
+                                <li>Emplacement&#8239;: situé sur la poitrine, juste au-dessus du cœur.</li>
+                                <li>Les enjeux émotifs&#8239;: l’amour, la joie et la paix intérieure.</li>
                                 <li>Les pierres&#8239;: lépidolite&#8239;; aventurine&#8239;; jade&#8239;; amazonite&#8239;;
                                     malachite&#8239;; quartz rose&#8239;; labradorite&#8239;; agate mousse&#8239;; jaspe
                                     unakite&#8239;;
@@ -235,8 +230,8 @@
                         <div class="card-body">
                             <ul class="w3-text-gray">
                                 <li>Notre capacité à communiquer.</li>
-                                <li>Emplacement&#8239;: La gorge.</li>
-                                <li>Les enjeux émotifs&#8239;: La communication, l’expression personnelle au travers des
+                                <li>Emplacement&#8239;: la gorge.</li>
+                                <li>Les enjeux émotifs&#8239;: la communication, l’expression personnelle au travers des
                                     sentiments et de la vérité, la détention de secrets.
                                 </li>
                                 <li>Les pierres&#8239;: fluorite&#8239;; aigue marine&#8239;; tourmaline noire&#8239;;
@@ -272,16 +267,16 @@
                         <div class="card-body">
                             <ul class="w3-text-gray">
                                 <li>Notre capacité à nous concentrer et à voir plus grand.</li>
-                                <li>Emplacement&#8239;: Sur le front entre les yeux (aussi appelé le chakra du troisième
+                                <li>Emplacement&#8239;: sur le front entre les yeux (aussi appelé le chakra du troisième
                                     oeil).
                                 </li>
-                                <li>Les enjeux émotifs&#8239;: L’intuition, l’imagination, la sagesse et l’habilité à
+                                <li>Les enjeux émotifs&#8239;: l’intuition, l’imagination, la sagesse et l’habilité à
                                     penser
                                     clairement et à prendre des décisions.
                                 </li>
                                 <li>Les pierres&#8239;: fluorite&#8239;; tourmaline noire&#8239;; sodalite&#8239;;
                                     dumortiérite&#8239;;
-                                    cristal de roche&#8239;; lapis lazpi.
+                                    cristal de roche&#8239;; lapis lazuli.
                                 </li>
                             </ul>
                         </div>
@@ -312,13 +307,12 @@
                         <div class="card-body">
                             <ul class="w3-text-gray">
                                 <li>Le chakra sommital représente notre capacité à nous relier à la source divine.</li>
-                                <li>Emplacement&#8239;: Le sommet de la tête.</li>
-                                <li>Les enjeux émotifs&#8239;: La beauté intérieure et extérieure, notre connexion à la
+                                <li>Emplacement&#8239;: le sommet de la tête.</li>
+                                <li>Les enjeux émotifs&#8239;: la beauté intérieure et extérieure, notre connexion à la
                                     spiritualité et au bonheur pur.
                                 </li>
                                 <li>Les pierres&#8239;: amethyste&#8239;; cristal de roche&#8239;; ametrine&#8239;;
-                                    lapis lazpi&#8239;;
-                                    howlite.
+                                    lapis lazuli&#8239;; howlite.
                                 </li>
                             </ul>
                         </div>
