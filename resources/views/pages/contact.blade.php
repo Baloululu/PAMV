@@ -14,42 +14,51 @@
         @include('pages/erreurs')
         @include('pages/flash')
 
-        <div class="row">
-            <div class="col-xs-12 col-md-8">
+        <div>
+            {!! Form::open(['route' => 'mail', 'method' => 'post', 'id' => 'mail-form']) !!}
 
-                {!! Form::open(['route' => 'mail', 'method' => 'post', 'id' => 'mail-form']) !!}
-
-                <div class="form-group">
-                    {!! Form::label('email', 'Adresse mail') !!}
-                    {!! Form::email('email', null, ['class' => 'form-control '.($errors->has('email') ? ' is-invalid' : ''), 'required' => 'required']) !!}
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                        {!! Form::label('email', 'Adresse mail') !!}
+                        {!! Form::email('email', null, ['class' => 'form-control '.($errors->has('email') ? ' is-invalid' : ''), 'required' => 'required']) !!}
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    {!! Form::label('object', 'Objet') !!}
-                    {!! Form::text('object', null, ['class' => 'form-control '.($errors->has('object') ? ' is-invalid' : ''), 'required' => 'required']) !!}
+                <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                        {!! Form::label('object', 'Objet') !!}
+                        {!! Form::text('object', null, ['class' => 'form-control '.($errors->has('object') ? ' is-invalid' : ''), 'required' => 'required']) !!}
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    {!! Form::label('content', 'Message') !!}
-                    {!! Form::textArea('content', null, ['class' => 'form-control', 'required' => 'required']) !!}
-                </div>
-
-                <div class="form-group">
-                    {!! Form::button('Envoyer', ['class' => 'btn btn-primary g-recaptcha', 'data-sitekey' => '6LdsaEQUAAAAAG6GioSQ_y_SF5zawRTPIsRIw4s6', 'data-callback' => 'onSubmit']) !!}
-                </div>
-
-                {!! Form::close() !!}
             </div>
-            <div class="col-xs-12 col-md-4">
+
+            <div class="form-group">
+                {!! Form::label('content', 'Message') !!}
+                {!! Form::textArea('content', null, ['class' => 'form-control', 'required' => 'required']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::button('Envoyer', ['class' => 'btn btn-primary g-recaptcha', 'data-sitekey' => '6LdsaEQUAAAAAG6GioSQ_y_SF5zawRTPIsRIw4s6', 'data-callback' => 'onSubmit']) !!}
+            </div>
+
+            {!! Form::close() !!}
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6 offset-md-3">
                 <fieldset class="contactsFieldset">
                     <legend>Laurence Fady</legend>
                     <p>
                         13 Rue du pré Martin<br>
                         88360 Rupt Sur Moselle<br>
-                        <a href="mailto:pamv88@orange.fr">pamv88@orange.fr</a>
                     </p>
                 </fieldset>
+            </div>
+        </div>
 
+        <h1>Autres magasins</h1>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
                 <fieldset class="contactsFieldset">
                     <legend>Kiou</legend>
                     <p>
@@ -58,7 +67,8 @@
                         <a href="http://maisondebeautekiou.com/" target="_blank">Site web</a>
                     </p>
                 </fieldset>
-
+            </div>
+            <div class="col-xs-12 col-md-6">
                 <fieldset class="contactsFieldset">
                     <legend>L'Aura Zen</legend>
                     <p>
@@ -73,7 +83,7 @@
 
     <div class="w3-light-gray">
         <div class="container">
-            <div id="map" class="mapContainer" ></div>
+            <div id="map" class="mapContainer"></div>
         </div>
     </div>
 @endsection
