@@ -22,7 +22,7 @@
                         <h5 class="card-title">
                             {{ $article->title }}
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text text-justify">
                             {{ $article->intro }}
                         </p>
                         <a href="{{ route('articles.show', $article) }}" class="card-text">Plus de détails</a>
