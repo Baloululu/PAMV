@@ -16,5 +16,4 @@ yarn-error.log
 package-lock.json
 *.lock
 public/img/articlesImg/*
-Notes_JJ_Sur_Site.txt
 resources/assets/sass/_env.scss

@@ -23,8 +23,10 @@ Il faut ensuite mettre à jour la base de données
 
 	php artisan migrate
 
+Rajouter les champs 'Colliers', 'Pierres', 'Bracelets' avec tinker dans la table category
 
-Option suite mise en place par Balou des tocken pour les api
+
+Suite mise en place par Balou des tocken pour les api
 
 	Pour générer la clef privée qui permettre de calculer les tocken
 		php artisan passport:keys 
@@ -57,3 +59,10 @@ Mot de passe = Venator88
 
 
 connexion à montbéliard => ssh pi@dyn.raspberrydemontbeliard.ovh -p 222
+
+=> config apache
+
+Dans /etc/apache2/apache2.conf
+<Directory /var/www/>
+    AllowOverride All
+</Directory>
