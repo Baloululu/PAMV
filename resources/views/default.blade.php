@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <link rel="icon" type="image/png" href="{{ asset("img/favicon.png") }}" />
 
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">

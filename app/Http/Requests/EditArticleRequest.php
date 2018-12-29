@@ -27,7 +27,8 @@ class EditArticleRequest extends FormRequest
         return [
             'title' => 'required',
             'content' => 'required',
-            'category_id' => 'required',
+            'category_id' => 'required|integer',
+            'intro' => 'required',
             'image' => 'nullable|image'
         ];
     }

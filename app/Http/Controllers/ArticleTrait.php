@@ -57,7 +57,9 @@ trait ArticleTrait
     {
         if ($request->hasFile('image'))
         {
-            unlink($article->image);
+            if (file_exists($article->image))
+                unlink($article->image);
+
             $path = $this->uploadImage($request->file('image'));
             $article->update([
                 'title' => $request->get('title'),
@@ -79,12 +81,16 @@ trait ArticleTrait
 
     public function destroyArticle(Article $article)
     {
-        unlink($article->image);
+        if (file_exists($article->image))
+            unlink($article->image);
         $article->delete();
     }
 
     private function uploadImage(UploadedFile $file)
     {
+        if (!file_exists('img/articlesImg'))
+            mkdir('img/articlesImg');
+
         $path = 'img/articlesImg/'.$file->getClientOriginalName();
 
         Image::make($file)

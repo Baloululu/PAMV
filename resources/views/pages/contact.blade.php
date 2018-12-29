@@ -20,8 +20,8 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <div class="form-group">
-                        {!! Form::label('email', 'Adresse mail') !!}
-                        {!! Form::email('email', null, ['class' => 'form-control '.($errors->has('email') ? ' is-invalid' : ''), 'required' => 'required']) !!}
+                        {!! Form::label('email', 'Votre adresse mail') !!}
+                        {!! Form::email('email', Auth::check() ? Auth::user()->email : null, ['class' => 'form-control '.($errors->has('email') ? ' is-invalid' : ''), 'required' => 'required']) !!}
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
