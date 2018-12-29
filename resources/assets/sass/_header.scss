@@ -1,12 +1,25 @@
 $header-first-color: $w3-pink;
 $header-second-color: lighten($w3-pink, 10%);
 
+.no-webp
+{
+  header
+  {
+    background: url($appPath + "/img/fond.jpg") no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+.webp
+{
+  header
+  {
+    background: url($appPath + "/img/fond.webp") no-repeat fixed;
+    background-size: cover;
+  }
+}
+
 header{
-  //background-image: url($appPath + "/img/fond.webp");
-  background-image: url($appPath + "/img/fond.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 74px 16px;
   font-family: 'Niconne', cursive;
 
