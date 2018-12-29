@@ -2,6 +2,7 @@ $header-first-color: $w3-pink;
 $header-second-color: lighten($w3-pink, 10%);
 
 header{
+  //background-image: url($appPath + "/img/fond.webp");
   background-image: url($appPath + "/img/fond.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;

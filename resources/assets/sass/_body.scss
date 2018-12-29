@@ -58,3 +58,12 @@ body{
     font-size: 2rem;
   }
 }
+
+.accordion-header{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.custom-file-label::after {
+  content: "Parcourir";
+}

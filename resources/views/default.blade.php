@@ -7,7 +7,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     @yield('head')
@@ -55,7 +54,7 @@
         </ul>
         <ul class="nav navbar-nav ml-auto">
             <li>
-                <a href="{{ route('home') }}" class="nav-link"><i class="fas fa-home"></i></a>
+                <a href="{{ route('home') }}" class="nav-link" title="Mon espace"><i class="far fa-user"></i></a>
             </li>
         </ul>
     </div>

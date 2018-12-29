@@ -60,23 +60,16 @@
 
             <div class="accordion" id="accordion">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-link w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Le Chakra racine (de base)
-                                    </button>
-                                </div>
-                                <div class="col text-right">
-                                    <button class="btn btn-link w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                </div>
+                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                         aria-expanded="true" aria-controls="collapseOne">
+                        <div class="row align-items-center accordion-header">
+                            <div class="col">
+                                Le Chakra racine (de base)
                             </div>
-                        </h2>
+                            <div class="col text-right">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
@@ -97,23 +90,16 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Le Chakra sacré
-                                    </button>
-                                </div>
-                                <div class="col text-right">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                </div>
+                    <div class="card-header" id="headingTwo" data-toggle="collapse"
+                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="row align-items-center accordion-header">
+                            <div class="col">
+                                Le Chakra sacré
                             </div>
-                        </h2>
+                            <div class="col text-right">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
@@ -134,23 +120,16 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Le Chakra du plexus solaire
-                                    </button>
-                                </div>
-                                <div class="col text-right">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                </div>
+                    <div class="card-header" id="headingThree" data-toggle="collapse"
+                         data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="row align-items-center accordion-header">
+                            <div class="col">
+                                Le Chakra du plexus solaire
                             </div>
-                        </h2>
+                            <div class="col text-right">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                          data-parent="#accordion">
@@ -162,7 +141,8 @@
                                 </li>
                                 <li>Les enjeux émotifs&#8239;: la confiance en soi et l’estime de soi.</li>
                                 <li>Les pierres&#8239;: ambre&#8239;; fluorite&#8239;; citrine&#8239;; soleil&#8239;;
-                                    œil de taureau et de tigre&#8239;; bronzite&#8239;; tourmaline noire&#8239;; amétrine&#8239;;
+                                    œil de taureau et de tigre&#8239;; bronzite&#8239;; tourmaline noire&#8239;;
+                                    amétrine&#8239;;
                                     corail fossilisé&#8239;; apatite&#8239;; cornaline.
                                 </li>
                             </ul>
@@ -171,23 +151,16 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingFor">
-                        <h2 class="mb-0">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
-                                        Le Chakra du cœur
-                                    </button>
-                                </div>
-                                <div class="col text-right">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                </div>
+                    <div class="card-header" id="headingFor" data-toggle="collapse"
+                         data-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
+                        <div class="row align-items-center accordion-header">
+                            <div class="col">
+                                Le Chakra du cœur
                             </div>
-                        </h2>
+                            <div class="col text-right">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
                     <div id="collapseFor" class="collapse" aria-labelledby="headingFor"
                          data-parent="#accordion">
@@ -207,23 +180,16 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingFive">
-                        <h2 class="mb-0">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Le Chakra de la gorge
-                                    </button>
-                                </div>
-                                <div class="col text-right">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                </div>
+                    <div class="card-header" id="headingFive" data-toggle="collapse"
+                         data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <div class="row align-items-center accordion-header">
+                            <div class="col">
+                                Le Chakra de la gorge
                             </div>
-                        </h2>
+                            <div class="col text-right">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                          data-parent="#accordion">
@@ -244,23 +210,16 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingSix">
-                        <h2 class="mb-0">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        Le Chakra frontal
-                                    </button>
-                                </div>
-                                <div class="col text-right">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                </div>
+                    <div class="card-header" id="headingSix" data-toggle="collapse"
+                         data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <div class="row align-items-center accordion-header">
+                            <div class="col">
+                                Le Chakra frontal
                             </div>
-                        </h2>
+                            <div class="col text-right">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
                          data-parent="#accordion">
@@ -284,23 +243,16 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingSeven">
-                        <h2 class="mb-0">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        Le Chakra de la couronne
-                                    </button>
-                                </div>
-                                <div class="col text-right">
-                                    <button class="btn btn-link collapsed w3-text-black" type="button" data-toggle="collapse"
-                                            data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                </div>
+                    <div class="card-header" id="headingSeven" data-toggle="collapse"
+                         data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <div class="row align-items-center accordion-header">
+                            <div class="col">
+                                Le Chakra de la couronne
                             </div>
-                        </h2>
+                            <div class="col text-right">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
                     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                          data-parent="#accordion">

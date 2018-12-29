@@ -10,8 +10,15 @@ else
 {!! Form::model($article, $option) !!}
 
 <div class="form-group">
+    <div class="custom-file">
+        {!! Form::label('image', 'Image', ['class' => 'custom-file-label']) !!}
+        {!! Form::file('image', ['class' => 'custom-file-input']) !!}
+    </div>
+</div>
+
+<div class="form-group">
     {!! Form::label('category_id', 'Catégorie') !!}
-    {!! Form::select('category_id', $categories, null, ['class' => 'form-control']) !!}
+    {!! Form::select('category_id', $categories, null, ['class' => 'custom-select']) !!}
 </div>
 
 <div class="form-group">
@@ -20,13 +27,8 @@ else
 </div>
 
 <div class="form-group">
-    {!! Form::label('image', 'Image') !!}
-    {!! Form::file('image', ['class' => 'form-control-file']) !!}
-</div>
-
-<div class="form-group">
     {!! Form::label('intro', 'Présentation de l\'article') !!}
-    {!! Form::textArea('intro', null, ['class' => 'form-control']) !!}
+    {!! Form::textArea('intro', null, ['class' => 'form-control', 'style' =>'height: 100px']) !!}
 </div>
 
 <div class="form-group">
@@ -48,5 +50,16 @@ else
             plugins: "lists",
             language: "fr_FR"
         });
+    </script>
+
+    <script>
+        $('#image').on('change',function(){
+            //get the file name
+            var fileName = $(this).val();
+            fileName = fileName.split('\\');
+            fileName = fileName[fileName.length - 1];
+            //replace the "Choose a file" label
+            $('.custom-file-label').html(fileName);
+        })
     </script>
 @endsection
