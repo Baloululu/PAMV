@@ -33,7 +33,8 @@ trait ArticleTrait
                 'title' => $request->get('title'),
                 'image' => $path,
                 'content' => $request->get('content'),
-                'category_id' => $request->get('category_id')
+                'category_id' => $request->get('category_id'),
+                'intro' => $request->get('intro')
             ]
         );
         return $article;
