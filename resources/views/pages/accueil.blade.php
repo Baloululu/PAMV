@@ -63,10 +63,10 @@
                     <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
                          aria-expanded="true" aria-controls="collapseOne">
                         <div class="row align-items-center accordion-header">
-                            <div class="col">
+                            <div class="col-10">
                                 Le Chakra racine (de base)
                             </div>
-                            <div class="col text-right">
+                            <div class="col-2 text-right">
                                 <i class="fas fa-angle-down"></i>
                             </div>
                         </div>
@@ -93,10 +93,10 @@
                     <div class="card-header" id="headingTwo" data-toggle="collapse"
                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="row align-items-center accordion-header">
-                            <div class="col">
+                            <div class="col-10">
                                 Le Chakra sacré
                             </div>
-                            <div class="col text-right">
+                            <div class="col-2 text-right">
                                 <i class="fas fa-angle-down"></i>
                             </div>
                         </div>
@@ -123,10 +123,10 @@
                     <div class="card-header" id="headingThree" data-toggle="collapse"
                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <div class="row align-items-center accordion-header">
-                            <div class="col">
+                            <div class="col-10">
                                 Le Chakra du plexus solaire
                             </div>
-                            <div class="col text-right">
+                            <div class="col-2 text-right">
                                 <i class="fas fa-angle-down"></i>
                             </div>
                         </div>
@@ -154,10 +154,10 @@
                     <div class="card-header" id="headingFor" data-toggle="collapse"
                          data-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
                         <div class="row align-items-center accordion-header">
-                            <div class="col">
+                            <div class="col-10">
                                 Le Chakra du cœur
                             </div>
-                            <div class="col text-right">
+                            <div class="col-2 text-right">
                                 <i class="fas fa-angle-down"></i>
                             </div>
                         </div>
@@ -183,10 +183,10 @@
                     <div class="card-header" id="headingFive" data-toggle="collapse"
                          data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         <div class="row align-items-center accordion-header">
-                            <div class="col">
+                            <div class="col-10">
                                 Le Chakra de la gorge
                             </div>
-                            <div class="col text-right">
+                            <div class="col-2 text-right">
                                 <i class="fas fa-angle-down"></i>
                             </div>
                         </div>
@@ -213,10 +213,10 @@
                     <div class="card-header" id="headingSix" data-toggle="collapse"
                          data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         <div class="row align-items-center accordion-header">
-                            <div class="col">
+                            <div class="col-10">
                                 Le Chakra frontal
                             </div>
-                            <div class="col text-right">
+                            <div class="col-2 text-right">
                                 <i class="fas fa-angle-down"></i>
                             </div>
                         </div>
@@ -246,10 +246,10 @@
                     <div class="card-header" id="headingSeven" data-toggle="collapse"
                          data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                         <div class="row align-items-center accordion-header">
-                            <div class="col">
+                            <div class="col-10">
                                 Le Chakra de la couronne
                             </div>
-                            <div class="col text-right">
+                            <div class="col-2 text-right">
                                 <i class="fas fa-angle-down"></i>
                             </div>
                         </div>
