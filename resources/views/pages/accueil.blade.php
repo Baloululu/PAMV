@@ -27,7 +27,7 @@
 
             </div>
             <div class="col-xs-12 col-md-4">
-                <img src="{{ asset('img/pamv_carte_optimise.svg') }}" style="width: 100%">
+                <img data-lazyload="{{ asset('img/pamv_carte_optimise.svg') }}" style="width: 100%">
             </div>
         </div>
     </div>
