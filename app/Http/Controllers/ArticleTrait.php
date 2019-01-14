@@ -94,7 +94,7 @@ trait ArticleTrait
         $path = 'img/articlesImg/'.$file->getClientOriginalName();
 
         Image::make($file)
-//            ->oriented()
+            ->oriented()
             ->resize(500, null, function ($constraint){
                 $constraint->aspectRatio();
             })

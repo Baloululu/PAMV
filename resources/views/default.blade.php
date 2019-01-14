@@ -8,7 +8,6 @@
 
     <link rel="icon" type="image/png" href="{{ asset("img/favicon.png") }}" />
 
-    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">

@@ -1,13 +1,11 @@
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
-
 @import "w3-color";
 @import "variablesBootstrap";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "env";
 @import "variables";
-
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
@@ -41,6 +39,14 @@
 //@import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
+
+@font-face {
+  font-family: 'Niconne';
+  src: url($appPath + "/fonts/niconne-regular-webfont.woff2") format('woff2'),
+  url($appPath + "/fonts/niconne-regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @import "header";
 

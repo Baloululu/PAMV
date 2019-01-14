@@ -56,7 +56,7 @@
             </div>
         </div>
 
-        <h1>Autres magasins</h1>
+        <h1>En partenariat avec&#8239;:</h1>
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <fieldset class="contactsFieldset">
