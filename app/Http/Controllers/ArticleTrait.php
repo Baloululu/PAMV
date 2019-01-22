@@ -11,9 +11,13 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 trait ArticleTrait
 {
 
-    public function pageArticle($page)
+    public function pageArticle($page, $name)
     {
         $articles = Category::where('name', $page)->first()->articles;
+
+        if ($name != null)
+            $page = $name;
+
         return compact("page", 'articles');
     }
 

@@ -25,6 +25,12 @@ Route::get('colliers', 'ArticleController@colliers')
 Route::get('pierres', 'ArticleController@pierres')
     ->name('pierres');
 
+Route::get('boucles', 'ArticleController@boucles')
+    ->name('boucles');
+
+Route::get('clefs', 'ArticleController@clefs')
+    ->name('clefs');
+
 Route::get('contacts', 'ContactController@index')
     ->name('contacts');
 

@@ -48,6 +48,12 @@
             <li class="@yield('Pierres')">
                 <a href="{{route('pierres')}}" class="nav-link">Pierres</a>
             </li>
+            <li class="@yield('Boucles d\'oreilles')">
+                <a href="{{ route('boucles') }}" class="nav-link">Boucles d'oreilles</a>
+            </li>
+            <li class="@yield('Portes clefs')">
+                <a href="{{ route('clefs') }}" class="nav-link">Portes clefs</a>
+            </li>
             <li class="@yield('Livre')">
                 <a href="{{ route('livre.index') }}" class="nav-link">Livre d'or</a>
             </li>

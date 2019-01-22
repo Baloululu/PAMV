@@ -1,5 +1,6 @@
 <?php
 
+use App\Category;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -18,6 +19,10 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
+
+        Category::create(["name" => "Colliers"]);
+        Category::create(["name" => "Pierres"]);
+        Category::create(["name" => "Bracelets"]);
     }
 
     /**

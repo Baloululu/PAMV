@@ -13,7 +13,7 @@ class ArticleController extends Controller
 
     public function __construct()
     {
-        $this->middleware('admin')->except(['bracelets', 'colliers', 'pierres', 'show']);
+        $this->middleware('admin')->except(['bracelets', 'colliers', 'pierres', "boucles", "clefs", "entretient", 'show']);
     }
 
     public function bracelets()
@@ -31,10 +31,20 @@ class ArticleController extends Controller
         return $this->page('Pierres');
     }
 
-    private function page($page)
+    public function boucles()
+    {
+        return $this->page('Boucles', "Boucles d'oreilles");
+    }
+
+    public function clefs()
+    {
+        return $this->page('Clefs', "Portes clefs");
+    }
+
+    private function page($page, $name = null)
     {
         Carbon::setLocale(config('app.locale'));
-        return view('pages/articles/all', $this->pageArticle($page));
+        return view('pages/articles/all', $this->pageArticle($page, $name));
     }
 
     /**

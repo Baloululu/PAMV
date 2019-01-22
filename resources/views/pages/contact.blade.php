@@ -60,16 +60,6 @@
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <fieldset class="contactsFieldset">
-                    <legend>Kiou</legend>
-                    <p>
-                        2 Quai de la Parelle<br>
-                        88360 Rupt Sur Moselle<br>
-                        <a href="http://maisondebeautekiou.com/" target="_blank">Site web</a>
-                    </p>
-                </fieldset>
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <fieldset class="contactsFieldset">
                     <legend>L'Aura Zen</legend>
                     <p>
                         12 Rue Albert Jacquemin<br>
@@ -78,6 +68,18 @@
                     </p>
                 </fieldset>
             </div>
+
+            <div class="col-xs-12 col-md-6">
+                <fieldset class="contactsFieldset">
+                    <legend>Kiou</legend>
+                    <p>
+                        2 Quai de la Parelle<br>
+                        88360 Rupt Sur Moselle<br>
+                        <a href="http://maisondebeautekiou.com/" target="_blank">Site web</a>
+                    </p>
+                </fieldset>
+            </div>
+
         </div>
     </div>
 

@@ -29,6 +29,12 @@ Route::middleware('auth:api')->group(function () {
     Route::get('colliers', 'Api\ArticleController@colliers')
         ->name('api.colliers');
 
+    Route::get('boucles', 'Api\ArticleController@boucles')
+        ->name('api.boucles');
+
+    Route::get('clefs', 'Api\ArticleController@clefs')
+        ->name('api.clefs');
+
     Route::get('pierres', 'Api\ArticleController@pierres')
         ->name('api.pierres');
 

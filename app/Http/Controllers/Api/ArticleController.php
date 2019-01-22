@@ -13,7 +13,7 @@ class ArticleController extends Controller
 
     public function __construct()
     {
-        $this->middleware('scope:admin')->except(['bracelets', 'colliers', 'pierres', 'show']);
+        $this->middleware('scope:admin')->except(['bracelets', 'colliers', 'pierres', "boucles", "clefs", "entretient", 'show']);
     }
 
     public function bracelets()
@@ -31,9 +31,19 @@ class ArticleController extends Controller
         return $this->page('Pierres');
     }
 
-    private function page($page)
+    public function boucles()
     {
-        return response()->json($this->pageArticle($page), 200);
+        return $this->page('Boucles');
+    }
+
+    public function clefs()
+    {
+        return $this->page('Clefs');
+    }
+
+    private function page($page, $name = null)
+    {
+        return response()->json($this->pageArticle($page, $name), 200);
     }
 
     public function create()
