@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'gcm_token'
     ];
 
     /**
@@ -35,5 +35,10 @@ class User extends Authenticatable
     public function isAdmin()
     {
         return $this->admin;
+    }
+
+    public function scopeNotifiable($query)
+    {
+        return $query->where('admin', true)->whereNotNull('gcm_token');
     }
 }
