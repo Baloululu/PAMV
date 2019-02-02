@@ -52,7 +52,7 @@
                 <a href="{{ route('boucles') }}" class="nav-link">Boucles d'oreilles</a>
             </li>
             <li class="@yield('Portes clefs')">
-                <a href="{{ route('clefs') }}" class="nav-link">Portes clefs</a>
+                <a href="{{ route('clefs') }}" class="nav-link">Porte-clefs</a>
             </li>
             <li class="@yield('Livre')">
                 <a href="{{ route('livre.index') }}" class="nav-link">Livre d'or</a>

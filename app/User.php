@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'gcm_token'
+        'name', 'email', 'password', 'fcm_token'
     ];
 
     /**
@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function scopeNotifiable($query)
     {
-        return $query->where('admin', true)->whereNotNull('gcm_token');
+        return $query->where('admin', true)->whereNotNull('fcm_token');
     }
 }

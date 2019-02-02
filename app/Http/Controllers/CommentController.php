@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Comment;
 use App\Http\Requests\EditCommentRequest;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -45,6 +46,17 @@ class CommentController extends Controller
                 'user_id' => Auth::user()->id
             ]
         );
+
+        $fcm_tokens = User::select('fcm_token')->notifiable()->pluck('fcm_token')->toArray();
+
+        Fcm()
+            ->to($fcm_tokens)
+            ->notification([
+                'title' => 'Nouveau commentaire',
+                'body' => $request->get('content'),
+            ])
+            ->send();
+
         return redirect(route('livre.index'))->with(['success' => "Votre commentaire a bien été pris en compte et sera affiché dès qu'un administrateur l'aura validé."]);
     }
 

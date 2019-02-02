@@ -6,6 +6,8 @@ use App\Article;
 use App\Http\Controllers\ArticleTrait;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\EditArticleRequest;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
@@ -13,7 +15,7 @@ class ArticleController extends Controller
 
     public function __construct()
     {
-        $this->middleware('scope:admin')->except(['bracelets', 'colliers', 'pierres', "boucles", "clefs", "entretient", 'show']);
+        $this->middleware('scope:admin')->except(['bracelets', 'colliers', 'pierres', "boucles", "clefs", "entretient", 'show', 'fcm']);
     }
 
     public function bracelets()

@@ -43,6 +43,9 @@ Route::middleware('auth:api')->group(function () {
         'as' => 'api'
     ]);
 
+    Route::post('fcmToken', 'Api\FcmController@fcm')
+        ->name('api.fcm');
+
 //    Route::middleware('scope:admin')->group(function () {
 //        Route::GET('test', function (){
 //            dd('ok');

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddGcmId extends Migration
+class AddFcmToken extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddGcmId extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string("gcm_token");
+            $table->string("fcm_token")->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ class AddGcmId extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn("gcm_token");
+            $table->dropColumn("fcm_token");
         });
     }
 }
