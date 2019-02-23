@@ -38,7 +38,7 @@ class ArticleController extends Controller
 
     public function clefs()
     {
-        return $this->page('Clefs', "Portes clefs");
+        return $this->page('Clefs', "Porte-clefs");
     }
 
     private function page($page, $name = null)
