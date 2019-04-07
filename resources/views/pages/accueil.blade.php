@@ -9,21 +9,37 @@
                 <h1>Mon histoire</h1>
                 <h4 class="vertical-margin-32">Comment j’ai eu l’idée de créer ma micro entreprise.</h4>
 
-                <p>Je suis allée voir une magnétiseuse qui m'a conseillé de porter un bracelet en perles de
-                    labradorite... ce que j’ai fait... Et au bout de quelques heures j’en ai ressenti les bienfaits.
-                    C‘était magique... donc à partir de là, j’ai décidé d’en faire profiter mon entourage en fabriquant
-                    moi-même des bracelets et je n'ai eu que de bons résultats auprès de tout le monde.
-                    Donc je me suis dit que j'allais fonder ma micro entreprise pour faire découvrir la lithothérapie à
-                    d'autres personnes. J’ai fait une formation aux cristaux éthériques auprès de Nadège pour mieux vous
-                    satisfaire et bien
-                    connaître les bienfaits des pierres.</p>
-                <p>Je vous propose de faire des bracelets, colliers, ... pour soulager vos maux. Mais aussi de porter
-                    des pierres sur vous ou de les mettre dans des pièces pour harmoniser votre maison.
-                    Les prix varient en fonction de votre tour de poignet. N’hésitez pas à me contacter soit par mail :
-                    <a href="mailto:pamv88@orange.fr">pamv88@orange.fr</a> ou par message via ma page <a
-                            href="https://www.facebook.com/fadylaurence/" target="_blank">facebook</a>.</p>
-                <p>Au plaisir de vous rencontrer !</p>
+                <p>Bienvenue à vous sur mon site internet, j'espère qu'il vous plaira. Je l'ai créé grâce à un ami, que
+                    je me permet au passage de remercier.</p>
+
+                <p>Quant à moi, je me présente en deux mots&#8239;: je m’appelle Laurence, j'ai 47 ans et réside dans les Vosges.</p>
+
+                <p>Concernant l'objectif de mon site, il est de vous présenter mon activité. En effet je vous propose à
+                    la vente des bracelets que je créés moi même sur mesure selon vos souhaits et tour de poignet. Cela
+                    en fait des objets totalement unique et parfaitement à votre goût. Je vend également des pendentifs,
+                    des boucles d’oreilles et toutes sortes de cristaux à porter sur soi selon vos symptômes et
+                    circonstances&#8239;: stress, troubles du sommeil, allergies, douleurs, grossesse, ménopause et bien d'autres.</p>
+
+                <p>Les cristaux qui ornent mes créations bijoux ont en effet des vertus et j'en ai une bonne connaissance
+                    afin d'adapter selon votre profil les pierres adéquates.  J'ai effectuée une formation auprès de
+                    Nadège (une formatrice en cristaux éthériques) pour connaitre tous les bien-faits des cristaux afin
+                    de vous proposer une large gamme de pierres aux diverses vertus.</p>
+
+                <p>Quelques mots concernant le statut de mon entreprise, je suis en auto-entreprise et par ailleurs en
+                complément je travaille également comme vendeuse en boulangerie.
+                Afin de concrétiser votre projet de bijou je vous propose de nous rencontrer, je peux en effet vous
+                recevoir sur rendez-vous, ainsi n'hésitez pas à me contacter pour en savoir plus (contact possible par
+                facebook&#8239;: <a href="https://www.facebook.com/fadylaurence/" target="_blank">Pierres aux milles vertus</a> ou par mail&#8239;:
+                <a href="mailto:laurence.fady@pierresauxmillesvertus.ovh">laurence.fady@pierresauxmillesvertus.ovh</a>).</p>
+
+                <p>J'espère pouvoir vous transmettre mon goût et ma passion pour les pierres et espère que mon site saura vous satisfaire.</p>
+
+                <p>À très bientôt</p>
+
                 <p>Laurence.</p>
+
+                <p><em>La lithothérapie rentre dans le cadre des thérapies alternatives énergétiques, elle ne remplace pas la
+                        médecine dite moderne. Pour tout problème médical veuillez consulter votre médecin.</em></p>
 
             </div>
             <div class="col-xs-12 col-md-4">
@@ -32,7 +48,7 @@
         </div>
     </div>
 
-    <div class="w3-light-gray">
+    <div class="w3-white">
         <div class="container">
             <div class="row text-justify align-items-center">
                 <div class="col-xs-12 col-md-4">

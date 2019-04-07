@@ -1,69 +1,37 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "tinymce@^4.9.1",
-        "scope": null,
-        "escapedName": "tinymce",
-        "name": "tinymce",
-        "rawSpec": "^4.9.1",
-        "spec": ">=4.9.1 <5.0.0",
-        "type": "range"
-      },
-      "/home/bastien/Documents/siteApache/pamv"
-    ]
-  ],
-  "_from": "tinymce@>=4.9.1 <5.0.0",
-  "_hasShrinkwrap": false,
-  "_id": "tinymce@4.9.1",
-  "_inCache": true,
+  "_from": "tinymce@4.9.4",
+  "_id": "tinymce@4.9.4",
+  "_inBundle": false,
+  "_integrity": "sha512-pht+jAPbVVEVaxGBAGqTwsVsdkI2+c/opuJ44KuD6pBJApMOQbfpGFt+XdxunyPLcxJsa7i28FIWe37W9zqeRA==",
   "_location": "/tinymce",
-  "_nodeVersion": "8.9.3",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/tinymce_4.9.1_1543932824960_0.04285342073931542"
-  },
-  "_npmUser": {
-    "name": "ephox",
-    "email": "npm-publish@tiny.cloud"
-  },
-  "_npmVersion": "5.5.1",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "tinymce@^4.9.1",
-    "scope": null,
-    "escapedName": "tinymce",
+    "type": "version",
+    "registry": true,
+    "raw": "tinymce@4.9.4",
     "name": "tinymce",
-    "rawSpec": "^4.9.1",
-    "spec": ">=4.9.1 <5.0.0",
-    "type": "range"
+    "escapedName": "tinymce",
+    "rawSpec": "4.9.4",
+    "saveSpec": null,
+    "fetchSpec": "4.9.4"
   },
   "_requiredBy": [
-    "#DEV:/"
+    "#DEV:/",
+    "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/tinymce/-/tinymce-4.9.1.tgz",
-  "_shasum": "821cecb103982ec8e37aae44a8f732849e3660d0",
-  "_shrinkwrap": null,
-  "_spec": "tinymce@^4.9.1",
-  "_where": "/home/bastien/Documents/siteApache/pamv",
+  "_resolved": "https://registry.npmjs.org/tinymce/-/tinymce-4.9.4.tgz",
+  "_shasum": "67c03d0c5a305b32f677e0680ed7909f3cfd457a",
+  "_spec": "tinymce@4.9.4",
+  "_where": "/home/bastien/Documents/siteApache/pamv/public",
   "author": {
     "name": "Ephox Corporation"
   },
   "bugs": {
     "url": "https://github.com/tinymce/tinymce/issues"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Web based JavaScript HTML WYSIWYG editor control.",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "integrity": "sha512-lGk6QFI2KYWnIkti0TvtN30GIgJAfWWl8LBqUYdnHuywrNvgl92fqrQHhUP7YChHNhiYZj6JAy8M5cwVlbO7iQ==",
-    "shasum": "821cecb103982ec8e37aae44a8f732849e3660d0",
-    "tarball": "https://registry.npmjs.org/tinymce/-/tinymce-4.9.1.tgz",
-    "fileCount": 185,
-    "unpackedSize": 4578008,
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcBouZCRA9TVsSAnZWagAAT4UP/AsML0k3wMdaoASUwfXj\nMIp9h7NDkIAEv5iUdDn67W96F47JzEldtN+ul13gZ34FiHPxLeMpbKpE0ljV\nZkuLNKixmFj7TSATIH2qGfY4gMiTv+TNTKECpdgucmINEhnonoxT/KLOwsNt\nIxnNwsG1iFysuB7Jb3AcQzvCWlJ9fqJsF+iYkrv+/44wxzUXCtp0TvYav6a/\nAxYmc+VEMCyZulb2wUnH8Mte3LwsS2gz3Ju7/mdQKD0MziWDl2Drx4Vexy6/\n6WkwvKBBZDIvSpDV8cS+afKoIx3e7mW/1je12ObzlarOiyI8e1RHUAVu75xE\nc5Q4AfmdY4TY0IwpfrtCdqVuv5T++oHpsCnMliKzUoM2ZkOMVS+BjV+m9zSw\nOqgm2njA76/JR7Tm5N2JRlhyweP3Ezz2P9fmQSll3Xe6GNBL8FQfMBX7iJJ9\nFtDdicyZzszWVNeB6/UGn6n26Vumpw2emj7FOUkkt4A6NBRlAMfY3d/BbAyH\nVS9iohH+PHkKQyK0yIHdTNyeqphk4EusAOq+z8PstPaUmgUQBNz28CvvPlkh\njPL6xyA2tZW9DW+yRLaLNNkZ5Jcg8nujaRZuwf3HXSo0QfNgrbl6o9/m5tTe\nNzFYaiFW0W6OPKtmpAPZfE2o9jLObPZKi3J9bOlArO6P3OwABky8Ng9RurDY\nUMrq\r\n=Qo62\r\n-----END PGP SIGNATURE-----\r\n"
-  },
   "homepage": "https://github.com/tinymce/tinymce-dist#readme",
   "keywords": [
     "editor",
@@ -75,22 +43,10 @@
   ],
   "license": "LGPL-2.1",
   "main": "tinymce.js",
-  "maintainers": [
-    {
-      "name": "ephox",
-      "email": "is-accounts@ephox.com"
-    },
-    {
-      "name": "spocke",
-      "email": "spocke@moxiecode.com"
-    }
-  ],
   "name": "tinymce",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tinymce/tinymce-dist.git"
   },
-  "version": "4.9.1"
+  "version": "4.9.4"
 }
