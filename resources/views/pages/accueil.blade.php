@@ -34,6 +34,9 @@
 
                 <p>J'espère pouvoir vous transmettre mon goût et ma passion pour les pierres et espère que mon site saura vous satisfaire.</p>
 
+                <p>Je vous propose également de retrouver mes créations bijoux auprès de <a href="{{ route('contacts') }}">mes partenaires</a> (Laura Zen à Vagney et l'Institut de Beauté Kiou à Rupt sur Moselle).
+                Je peux également vous proposer des rendez vous sur mesure, selon vos disponibilités afin que vous discutions ensemble de votre projet bijoux et de vos souhaits. Ces moments d'échange sont toujours riches en intérêt.</p>
+
                 <p>À très bientôt</p>
 
                 <p>Laurence.</p>
