@@ -74,7 +74,7 @@
 </div>
 
 <footer>
-    <a href="mailto:pamv88@orange.fr"><i class="fas fa-envelope"></i></a>
+    <a href="mailto:laurence.fady@pierresauxmillesvertus.ovh" title="laurence.fady@pierresauxmillesvertus.ovh"><i class="fas fa-envelope"></i></a>
     <a href="https://www.facebook.com/fadylaurence/" target="_blank"><i class="fab fa-facebook-square"></i></a>
 </footer>
 </body>
