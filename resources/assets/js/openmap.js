@@ -7,7 +7,8 @@ var macarte = null;
 var magasins = {
     "Laurence Fady<br>13 rue du prés martin": {"lat": 47.9340714, "lon": 6.6534392},
     "Maison de beauté kiou<br>2 quai de la parelle": {"lat": 47.9236221, "lon": 6.6591857},
-    "L'Aura Zen<br>12 Rue Albert Jacquemin": {"lat": 48.0099307, "lon": 6.7178586}
+    "L'Aura Zen<br>12 Rue Albert Jacquemin": {"lat": 48.0099307, "lon": 6.7178586},
+    "Paren'Thé<br>44 Rue de la Courtine": {"lat": 48.0165063, "lon": 6.5862859}
 };
 
 // Fonction d'initialisation de la carte

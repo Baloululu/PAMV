@@ -58,7 +58,7 @@
 
         <h1>En partenariat avec&#8239;:</h1>
         <div class="row">
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12 col-md-4">
                 <fieldset class="contactsFieldset">
                     <legend>L'Aura Zen</legend>
                     <p>
@@ -69,13 +69,24 @@
                 </fieldset>
             </div>
 
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12 col-md-4">
                 <fieldset class="contactsFieldset">
                     <legend>Kiou</legend>
                     <p>
                         2 Quai de la Parelle<br>
                         88360 Rupt Sur Moselle<br>
                         <a href="http://maisondebeautekiou.com/" target="_blank">Site web</a>
+                    </p>
+                </fieldset>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <fieldset class="contactsFieldset">
+                    <legend>Paren'Thé</legend>
+                    <p>
+                        44 Rue de la Courtine<br>
+                        88200 Remiremont<br>
+                        <a href="https://parentheboutique.wordpress.com/" target="_blank">Site web</a>
                     </p>
                 </fieldset>
             </div>
