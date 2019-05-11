@@ -1,3 +1,3 @@
-<h1>Un super mail envoyé depuis laravel !</h1>
+<h1>Pierres aux milles vertus</h1>
 
 <p>{{ $content }}</p>

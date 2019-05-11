@@ -30,7 +30,7 @@
                 Afin de concrétiser votre projet de bijou je vous propose de nous rencontrer, je peux en effet vous
                 recevoir sur rendez-vous, ainsi n'hésitez pas à me contacter pour en savoir plus (contact possible par
                 facebook&#8239;: <a href="https://www.facebook.com/fadylaurence/" target="_blank">Pierres aux milles vertus</a> ou par mail&#8239;:
-                <a href="mailto:laurence.fady@pierresauxmillesvertus.ovh">laurence.fady@pierresauxmillesvertus.ovh</a>).</p>
+                <a href="mailto:pamv88@orange.fr">pamv88@orange.fr</a>).</p>
 
                 <p>J'espère pouvoir vous transmettre mon goût et ma passion pour les pierres et espère que mon site saura vous satisfaire.</p>
 

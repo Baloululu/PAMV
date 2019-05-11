@@ -33,7 +33,7 @@ class ContactsMail extends Mailable
 //            ->from($this->email)
             ->replyTo($this->email)
             ->subject($this->object)
-            ->to("bluchier@laposte.net")
+            ->to("pamv88@orange.fr")
             ->view('emails/contacts');
 //            ->text($this->content);
     }
