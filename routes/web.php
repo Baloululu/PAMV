@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages/accueil');
-})
+Route::get('/', 'ArticleController@index')
     ->name('accueil');
 
 Route::get('bracelets', 'ArticleController@bracelets')

@@ -16,6 +16,11 @@ class ArticleController extends Controller
         $this->middleware('admin')->except(['bracelets', 'colliers', 'pierres', "boucles", "clefs", "entretient", 'show']);
     }
 
+    public function index()
+    {
+        return view('pages/accueil');
+    }
+
     public function bracelets()
     {
         return $this->page('Bracelets');
