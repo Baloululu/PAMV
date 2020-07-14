@@ -13,7 +13,7 @@ class ArticleController extends Controller
 
     public function __construct()
     {
-        $this->middleware('admin')->except(['bracelets', 'colliers', 'pierres', "boucles", "clefs", "entretient", 'show']);
+        $this->middleware('admin')->except(['bracelets', 'colliers', 'pierres', "boucles", "clefs", "entretient", 'show', 'index']);
     }
 
     public function index()
